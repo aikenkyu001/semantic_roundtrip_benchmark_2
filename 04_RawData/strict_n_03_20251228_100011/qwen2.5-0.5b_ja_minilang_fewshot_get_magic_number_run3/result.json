@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```python\ndef get_magic_number():\n    return 42\n```\n\n\u3053\u306e\u30b3\u30fc\u30c9\u306f\u3001Python\u306e`return`\u8a9e\u53e5\u3092minilang\u3067\u4ee3\u5165\u3057\u3066\u3044\u307e\u3059\u3002`get_magic_number()`\u95a2\u6570\u3067\u306f\u3001\u305d\u308c\u81ea\u8eab\u3092\u8fd4\u3057\u3001`main.py`\u30d5\u30a1\u30a4\u30eb\u5185\u3067\u547c\u3070\u308c\u308b\u3068\u304d\u306b\u547c\u3073\u51fa\u3055\u308c\u307e\u3059\u3002",
+            "step1_generated_spec": "def get_magic_number():\n    return 42",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

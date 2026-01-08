@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "MiniLang Specification:\nget_magic_number: f(a, b) = a + b\nTask: Get the magic number from a function with name \"get_magic_number\". The function returns the value of a random variable named \"a\" and adds it to another random variable named \"b\", returning the sum as a final result.",
+            "step1_generated_spec": "MiniLang Specification:\nget_magic_number: f(a, b) = a + b\nTask: Get the magic number from a function with name \"get_magic_number\". The function returns the value of a random variable named \"a\" and adds it to another random variable named \"b\", returning the sum as a final result.",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

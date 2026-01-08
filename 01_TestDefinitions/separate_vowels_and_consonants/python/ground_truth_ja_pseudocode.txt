@@ -1,0 +1,12 @@
+関数 separate_vowels_and_consonants(input_string):
+  母音用の空のリスト vowel_chars を作成
+  子音とその他のための空のリスト consonant_chars を作成
+  母音の文字列を定義: vowels = "aeiouAEIOU"
+
+  input_string の各文字について繰り返す:
+    もし文字が母音の文字列内にあるならば:
+      文字を vowel_chars に追加
+    そうでなければ:
+      文字を consonant_chars に追加
+            
+  vowel_chars と consonant_chars を結合した文字列を返す

@@ -1,0 +1,17 @@
+Translate the following Python code into a pseudocode specification.
+Output only the pseudocode specification, with no explanation.
+
+Example 1:
+Python Code:
+def get_sum(a, b):
+    return a + b
+
+Pseudocode Specification:
+FUNCTION get_sum(a, b):
+  RETURN a + b
+
+Task:
+Python Code:
+{source_code}
+
+Pseudocode Specification:

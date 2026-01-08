@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "BEGIN\n  FUNCTION get_magic_number()\n      RESULT := 0\n      WHILE true DO\n        SET magic_num = <- Call this function>\n        IF (magic_num mod 2) = 0 THEN\n          ADD RESULT TO magic_num\n        ENDIF\n        IF (magic_num MOD 3 = 0) THEN\n          ADD RESULT TO magic_num\n        ENDIF\n        WAIT FOR FIVE SECONDS\n      ENDWHILE\n      RETURN RESULT\nEND FUNCTION",
+            "step1_generated_spec": "BEGIN\n  FUNCTION get_magic_number()\n      RESULT := 0\n      WHILE true DO\n        SET magic_num = <- Call this function>\n        IF (magic_num mod 2) = 0 THEN\n          ADD RESULT TO magic_num\n        ENDIF\n        IF (magic_num MOD 3 = 0) THEN\n          ADD RESULT TO magic_num\n        ENDIF\n        WAIT FOR FIVE SECONDS\n      ENDWHILE\n      RETURN RESULT\nEND FUNCTION",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

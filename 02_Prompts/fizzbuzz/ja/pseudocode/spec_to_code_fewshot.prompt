@@ -1,0 +1,40 @@
+以下の擬似コード仕様書に基づいてPython関数を生成してください。
+Pythonコードブロックのみを出力し、説明は含めないでください。
+
+例1:
+擬似コード仕様書:
+関数 get_magic_number():
+  42 を返す
+
+Pythonコード:
+def get_magic_number():
+    return 42
+
+例2:
+擬似コード仕様書:
+関数 fizzbuzz(n):
+  もし n を 15 で割った余りが 0 ならば:
+    "FizzBuzz" を返す
+  もしそうでなく、n を 3 で割った余りが 0 ならば:
+    "Fizz" を返す
+  もしそうでなく、n を 5 で割った余りが 0 ならば:
+    "Buzz" を返す
+  そうでなければ:
+    n を返す
+
+Pythonコード:
+def fizzbuzz(n):
+    if n % 15 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return n
+
+タスク:
+擬似コード仕様書:
+{specification}
+
+Pythonコード:

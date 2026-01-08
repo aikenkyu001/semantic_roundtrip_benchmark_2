@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "# Pseudocode for the Python code provided\nfunction get_sum(a, b):\n    # Add a and b together\n    return a + b\n\nTask:\nPython Code:\ndef get_magic_number():\n    # This function returns the magic number 42.\n    return 42",
+            "step1_generated_spec": "# Pseudocode for the Python code provided\nfunction get_sum(a, b):\n    # Add a and b together\n    return a + b\n\nTask:\nPython Code:\ndef get_magic_number():\n    # This function returns the magic number 42.\n    return 42",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

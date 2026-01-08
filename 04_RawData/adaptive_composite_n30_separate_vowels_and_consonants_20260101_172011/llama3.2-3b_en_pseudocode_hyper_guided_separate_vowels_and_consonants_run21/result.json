@@ -1,0 +1,24 @@
+{
+    "status": "FAIL: Cycle 2 failed.",
+    "cycles_completed": 1,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "for each character in input_string:\n    if character is in vowels:\n        add character to vowel_chars\n    else:\n        add character to consonant_chars\n\nconcatenated string of vowel_chars + concatenated string of consonant_chars",
+            "step1_generated_spec": "for each character in input_string:\n    if character is in vowels:\n        add character to vowel_chars\n    else:\n        add character to consonant_chars\n\nconcatenated string of vowel_chars + concatenated string of consonant_chars",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def separate_vowels_and_consonants(input_string):\n    vowel_chars = []\n    consonant_chars = []\n    vowels = 'aeiouAEIOU'\n    for char in input_string:\n        if char in vowels:\n            vowel_chars.append(char)\n        else:\n            consonant_chars.append(char)\n    return ''.join(vowel_chars + consonant_chars)",
+            "step2_generated_code_clean": "def separate_vowels_and_consonants(input_string):\n    vowel_chars = []\n    consonant_chars = []\n    vowels = 'aeiouAEIOU'\n    for char in input_string:\n        if char in vowels:\n            vowel_chars.append(char)\n        else:\n            consonant_chars.append(char)\n    return ''.join(vowel_chars + consonant_chars)",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "for each character in input_string:\n    if character is in vowels:\n        add character to vowel_chars\n    else:\n        add character to consonant_chars\nadd all characters in vowel_chars and consonant_chars to result string\nconcatenated string of result",
+            "step1_generated_spec": "for each character in input_string:\n    if character is in vowels:\n        add character to vowel_chars\n    else:\n        add character to consonant_chars\nadd all characters in vowel_chars and consonant_chars to result string\nconcatenated string of result",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def separate_vowels_and_consonants(input_string):\n    vowels = 'aeiou'\n    vowel_chars = []\n    consonant_chars = []\n\n    for char in input_string.lower():\n        if char in vowels:\n            vowel_chars.append(char)\n        else:\n            consonant_chars.append(char)\n\n    return ''.join(vowel_chars + consonant_chars)",
+            "step2_generated_code_clean": "def separate_vowels_and_consonants(input_string):\n    vowels = 'aeiou'\n    vowel_chars = []\n    consonant_chars = []\n\n    for char in input_string.lower():\n        if char in vowels:\n            vowel_chars.append(char)\n        else:\n            consonant_chars.append(char)\n\n    return ''.join(vowel_chars + consonant_chars)",
+            "step2_status": "FAIL: Code validation failed. Error: None, Output: FAILURE\n[\n    {\n        \"input\": \"Hello World\",\n        \"expected\": \"eooHll Wrld\",\n        \"actual\": \"eoohll wrld\",\n        \"passed\": false,\n        \"error\": null\n    },\n    {\n        \"input\": \"Python\",\n        \"expected\": \"oPythn\",\n        \"actual\": \"opythn\",\n        \"passed\": false,\n        \"error\": null\n    },\n    {\n        \"input\": \"aeiou\",\n        \"expected\": \"aeiou\",\n        \"actual\": \"aeiou\",\n        \"passed\": true,\n        \"error\": null\n    },\n    {\n        \"input\": \"bcdf\",\n        \"expected\": \"bcdf\",\n        \"actual\": \"bcdf\",\n        \"passed\": true,\n        \"error\": null\n    },\n    {\n        \"input\": \"AeiOu\",\n        \"expected\": \"AeiOu\",\n        \"actual\": \"aeiou\",\n        \"passed\": false,\n        \"error\": null\n    },\n    {\n        \"input\": \"\",\n        \"expected\": \"\",\n        \"actual\": \"\",\n        \"passed\": true,\n        \"error\": null\n    },\n    {\n        \"input\": \"123abc\",\n        \"expected\": \"a123bc\",\n        \"actual\": \"a123bc\",\n        \"passed\": true,\n        \"error\": null\n    }\n]"
+        }
+    ]
+}

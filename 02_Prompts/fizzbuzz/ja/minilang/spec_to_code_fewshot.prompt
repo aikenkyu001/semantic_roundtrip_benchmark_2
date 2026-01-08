@@ -1,0 +1,39 @@
+以下のMinilang仕様に基づいてPython関数を生成してください。
+Pythonコードブロックのみを出力し、説明は含めないでください。
+
+例1:
+Minilang仕様:
+FUNCTION get_magic_number: RETURNS 42
+
+Pythonコード:
+def get_magic_number():
+    return 42
+
+例2:
+Minilang仕様:
+関数 fizzbuzz(n):
+  判定 n を 15 で割った余りが 0 の場合:
+    "FizzBuzz" を返す
+  それ以外で 判定 n を 3 で割った余りが 0 の場合:
+    "Fizz" を返す
+  それ以外で 判定 n を 5 で割った余りが 0 の場合:
+    "Buzz" を返す
+  それ以外の場合:
+    n を返す
+
+Pythonコード:
+def fizzbuzz(n):
+    if n % 15 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return n
+
+タスク:
+Minilang仕様:
+{specification}
+
+Pythonコード:

@@ -1,0 +1,46 @@
+You are an expert Python programmer. Your task is to generate a Python function from a pseudocode specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Pseudocode:** First, think step-by-step about the provided pseudocode.
+    -   Identify the overall function name and its parameters.
+    -   Recognize the main loop structure (`FOR EACH`).
+    -   Understand the logic for variable initialization, calculation, and conditional checks (`IF/ELSE IF/ELSE`).
+    -   Note the final string formatting and list append operations.
+
+2.  **Apply Translation Rules:** Convert pseudocode constructs to Python.
+    -   `FUNCTION ...` becomes `def ...:`.
+    -   `CREATE an empty list` becomes `[]`.
+    -   `FOR EACH ...:` becomes `for ...:`.
+    -   `GET ... from ...` becomes dictionary `.get()`.
+    -   `IF scores is not empty` becomes `if scores:`.
+    -   `sum of scores / count of scores` becomes `sum(scores) / len(scores)`.
+    -   `APPEND ... to ...` becomes `.append()`.
+    -   `FORMAT ... as "..."` becomes a Python f-string.
+
+3.  **Generate Code:** Based on your analysis, generate ONLY the Python code.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Python code.
+    -   Do NOT include the markdown block ('''python).
+    -   Do NOT include any explanation, comments, or any text other than the code itself.
+
+### TASK ###
+
+Pseudocode Specification:
+{specification}
+
+Chain of Thought:
+1.  The pseudocode defines a function `process_user_list`.
+2.  I need to create an empty list `output_list`.
+3.  I will loop through `user_data` with a `for` loop.
+4.  Inside the loop, I'll use `.get()` to safely access dictionary keys.
+5.  I will calculate the average, making sure to handle the case of an empty list to avoid a ZeroDivisionError.
+6.  I'll use an `if/elif/else` chain to assign the rank.
+7.  I will use an f-string to format the output string, including the 1-decimal-place formatting for the average.
+8.  I will append the formatted string to the list.
+9.  Finally, I will return the list.
+
+Python Code:

@@ -1,0 +1,37 @@
+You are an expert system designer. Your task is to translate a Python function into a S-expression specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name from the `def` statement.
+    -   Identify the parameters from inside the `()`.
+    -   Identify the return value from the `return` statement.
+
+2.  **Apply Translation Rules:** Convert the Python code to an S-expression based on these rules.
+    -   The top-level expression is `(function ...)`.
+    -   The function name goes into a `(name ...)` block.
+    -   Parameters go into a `(parameters ...)` block, with each parameter wrapped in `(param ...)`.
+    -   The return value goes into a `(returns (value ...))` block.
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the S-expression.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw S-expression text on a single line.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+```python
+{source_code}
+```
+
+Chain of Thought:
+1.  The Python function name is `get_magic_number`.
+2.  The function has no parameters.
+3.  The return value is the integer `42`.
+4.  Based on the rules, I will generate the S-expression `(function (name get_magic_number) (parameters) (returns (value 42)))`.
+
+S-expression Specification:

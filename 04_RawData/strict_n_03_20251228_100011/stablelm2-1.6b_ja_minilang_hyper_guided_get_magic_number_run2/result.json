@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```miyagi```\n\u540d\u524d\uff1aget_magic_number\n\u5024\uff08\u6574\u6570\uff09\uff1a123\n\u6587\u672c\uff1a\"\u3053\u306e\u95a2\u6570\u306f 123 \u3067\u3059\u3002\"\n```",
+            "step1_generated_spec": "\u540d\u524d\uff1aget_magic_number\n\u5024\uff08\u6574\u6570\uff09\uff1a123\n\u6587\u672c\uff1a\"\u3053\u306e\u95a2\u6570\u306f 123 \u3067\u3059\u3002\"",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

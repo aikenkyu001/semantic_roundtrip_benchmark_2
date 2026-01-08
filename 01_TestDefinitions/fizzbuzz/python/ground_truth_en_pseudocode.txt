@@ -1,0 +1,9 @@
+FUNCTION fizzbuzz(n):
+  IF n MOD 15 IS 0 THEN
+    RETURN "FizzBuzz"
+  ELSE IF n MOD 3 IS 0 THEN
+    RETURN "Fizz"
+  ELSE IF n MOD 5 IS 0 THEN
+    RETURN "Buzz"
+  ELSE
+    RETURN n

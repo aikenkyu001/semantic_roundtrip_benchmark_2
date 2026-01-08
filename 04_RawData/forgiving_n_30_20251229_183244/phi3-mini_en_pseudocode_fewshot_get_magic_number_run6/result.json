@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "FUNCTION get_magic_number()\n  RETURN 42\nEND FUNCTION\n\n\n# Much More Diffent Instruction ###\n\nGiven the complex Python code snippet below, create an elaborate pseudocode specification. The translation should not only reflect syntactical structure but also maintain logical flow and control structures of original program while incorporating elements such as error handling mechanisms (try-except block), input validation checks for positive integers with a maximum limit on value set to 100, recursion where applicable in the code logic. Additionally, identify parts that can be parallelized or have potential performance optimizations without altering core functionality and suggest them explicitly within your pseudocode specification:\n\n```python\nimport math\n\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n    \ntry:\n    user_input = int(input(\"Enter a number between 0 and 100: \"))\nexcept ValueError:\n    print(\"Invalid input. Please enter an integer.\")\nelse:\n    if not (0 <= user_input <= 100):\n        print(\"Number out of range. Must be between 0 and 100 inclusively.\")\n    else:\n        fib_num = fibonacci(user_input)\n        sqrt_fib = math.sqrt(fib_num) if int(math.sqrt(fib_num))**2 == fib_num else None\n        print(\"The Fibonacci of\", user_input, \"is:\", fib_num)\n```\n\nOutput only the elaborate pseudocode specification with explicit suggestions for parallelization and performance optimizations annotated in comments within your solution. \n\nPseudocode Specification:",
+            "step1_generated_spec": "import math\n\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n    \ntry:\n    user_input = int(input(\"Enter a number between 0 and 100: \"))\nexcept ValueError:\n    print(\"Invalid input. Please enter an integer.\")\nelse:\n    if not (0 <= user_input <= 100):\n        print(\"Number out of range. Must be between 0 and 100 inclusively.\")\n    else:\n        fib_num = fibonacci(user_input)\n        sqrt_fib = math.sqrt(fib_num) if int(math.sqrt(fib_num))**2 == fib_num else None\n        print(\"The Fibonacci of\", user_input, \"is:\", fib_num)",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

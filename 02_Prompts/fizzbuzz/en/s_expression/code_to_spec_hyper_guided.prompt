@@ -1,0 +1,46 @@
+You are an expert system designer. Your task is to translate a Python function into an S-expression specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name and parameters.
+    -   Analyze the conditional logic (if/elif/else) and their conditions (e.g., modulo operations).
+    -   Identify the return values for each branch.
+
+2.  **Apply Translation Rules (Python to S-expression):**
+    -   Function definition `def <name>(<params>):` becomes `(define (<name> <params>) ...)`.
+    -   `if`/`elif`/`else` statements become `(cond ...)` with clauses `((<condition>) <expression>)`.
+    -   Modulo operator `%` becomes `(mod <dividend> <divisor>)`.
+    -   Equality `==` becomes `(= <operand1> <operand2>)`.
+    -   String literals remain as they are.
+    -   Return statements map to the expression within the cond clause.
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the S-expression.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw S-expression text.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+'''python
+{source_code}
+'''
+
+Chain of Thought:
+1.  The Python function name is `fizzbuzz` and it takes one parameter `n`.
+2.  The logic involves multiple conditional checks. This translates to an S-expression `cond` structure.
+3.  Conditions like `n % 15 == 0` translate to `(= (mod n 15) 0)`.
+4.  Return values like `"FizzBuzz"` or `n` are the expressions within the `cond` clauses.
+5.  The final S-expression will be:
+    (define (fizzbuzz n)
+      (cond
+        ((= (mod n 15) 0) "FizzBuzz")
+        ((= (mod n 3) 0) "Fizz")
+        ((= (mod n 5) 0) "Buzz")
+        (else n)))
+
+S-expression Specification:

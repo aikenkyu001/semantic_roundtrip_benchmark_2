@@ -1,0 +1,30 @@
+{
+    "status": "FAIL: Cycle 3 failed.",
+    "cycles_completed": 2,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 3,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42\n\n\n### Python\u306e\u300cwhile\u300d\u30eb\u30fc\u30d7\u3092\u6a21\u5023\u3057\u305f\u7591\u4f3c\u30b3\u30fc\u30c9\u4ed5\u69db ###\n\n```python\nfunc while_loop(condition): # condition: bool, iterable\n    index = 0\n    results = []\n    \n    loop_start():       \n    if not isinstance(condition, (bool, list)) or len(condition) == 0:\n        error(\"Invalid input for 'while' loop\")\n        exit()        \n\n    while condition[index]: # Loop until the iterable ends or a falsy value appears. Assume conditions are truthy by default and that index does not exceed length of condition.    \n        result = process(condition[index]) \n        results.append(result)                  \n        if next_item():       # A placeholder for logic to determine whether the loop should continue (i.e., an end-of-loop marker or a custom control flow).        \n            index += 1            \n    return results\n```",
+            "step1_generated_spec": "func while_loop(condition): # condition: bool, iterable\n    index = 0\n    results = []\n    \n    loop_start():       \n    if not isinstance(condition, (bool, list)) or len(condition) == 0:\n        error(\"Invalid input for 'while' loop\")\n        exit()        \n\n    while condition[index]: # Loop until the iterable ends or a falsy value appears. Assume conditions are truthy by default and that index does not exceed length of condition.    \n        result = process(condition[index]) \n        results.append(result)                  \n        if next_item():       # A placeholder for logic to determine whether the loop should continue (i.e., an end-of-loop marker or a custom control flow).        \n            index += 1            \n    return results",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

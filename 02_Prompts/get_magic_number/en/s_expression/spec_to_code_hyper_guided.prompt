@@ -1,0 +1,36 @@
+You are an expert Python programmer. Your task is to generate a Python function from a S-expression specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the S-expression:** First, think step-by-step about the provided S-expression.
+    - Find the `(name ...)` part to identify the function name.
+    - Find the `(parameters ...)` part to identify the parameters.
+    - Find the `(returns (value ...))` part to identify the return value.
+
+2.  **Apply Translation Rules:** Convert the S-expression to Python based on these rules.
+    - The content of `(name ...)` becomes the Python function name.
+    - The content of each `(param ...)` inside `(parameters ...)` becomes a function parameter.
+    - The content of `(value ...)` inside `(returns ...)` becomes the Python `return` statement's content.
+
+3.  **Generate Code:** Based on your analysis, generate ONLY the Python code.
+
+4.  **Strict Output Format:**
+    - You MUST output ONLY the raw Python code.
+    - Do NOT include the markdown block (```python).
+    - Do NOT include any explanation, comments, or any text other than the code itself.
+
+### TASK ###
+
+S-expression Specification:
+{specification}
+
+Chain of Thought:
+1.  The S-expression is `(function (name get_magic_number) (parameters) (returns (value 42)))`.
+2.  The function name is `get_magic_number`.
+3.  The `(parameters)` block is empty, so there are no parameters.
+4.  The return value is `42`.
+5.  Based on the rules, I will generate `def get_magic_number():` and `return 42` which are parts of a Python function.
+
+Python Code:

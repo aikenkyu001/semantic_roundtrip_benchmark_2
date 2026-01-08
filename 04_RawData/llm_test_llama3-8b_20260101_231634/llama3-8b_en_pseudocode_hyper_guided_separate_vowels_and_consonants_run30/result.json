@@ -1,0 +1,24 @@
+{
+    "status": "FAIL: Cycle 2 failed.",
+    "cycles_completed": 1,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "Here is the pseudocode specification:\n\n```pseudocode\nBEGIN FUNCTION separate_vowels_and_consonants(input_string)\n    DECLARE vowel_chars AS EMPTY LIST\n    DECLARE consonant_chars AS EMPTY LIST\n    DECLARE vowels AS STRING \"aeiouAEIOU\"\n    \n    FOR EACH CHARACTER in input_string:\n        IF CHARACTER is in vowels:\n            ADD CHARACTER to vowel_chars\n        ELSE:\n            ADD CHARACTER to consonant_chars\n            \n    RETURN CONCATENATED STRING OF vowel_chars AND consonant_chars\nEND FUNCTION",
+            "step1_generated_spec": "Here is the pseudocode specification:\n\n```pseudocode\nBEGIN FUNCTION separate_vowels_and_consonants(input_string)\n    DECLARE vowel_chars AS EMPTY LIST\n    DECLARE consonant_chars AS EMPTY LIST\n    DECLARE vowels AS STRING \"aeiouAEIOU\"\n    \n    FOR EACH CHARACTER in input_string:\n        IF CHARACTER is in vowels:\n            ADD CHARACTER to vowel_chars\n        ELSE:\n            ADD CHARACTER to consonant_chars\n            \n    RETURN CONCATENATED STRING OF vowel_chars AND consonant_chars\nEND FUNCTION",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```\ndef separate_vowels_and_consonants(input_string):\n    vowel_chars = []\n    consonant_chars = []\n    vowels = \"aeiouAEIOU\"\n    \n    for char in input_string:\n        if char.lower() in vowels:\n            vowel_chars.append(char)\n        else:\n            consonant_chars.append(char)\n            \n    return \"\".join(vowel_chars + consonant_chars)\n```",
+            "step2_generated_code_clean": "def separate_vowels_and_consonants(input_string):\n    vowel_chars = []\n    consonant_chars = []\n    vowels = \"aeiouAEIOU\"\n    \n    for char in input_string:\n        if char.lower() in vowels:\n            vowel_chars.append(char)\n        else:\n            consonant_chars.append(char)\n            \n    return \"\".join(vowel_chars + consonant_chars)",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "Here's the pseudocode specification:\n\n```pseudocode\nPROVIDED PROCEDURE separate_vowels_and_consonants(input_string)\n   DECLARE vowel_chars, consonant_chars AS VECTORS OF CHARACTERS\n   DECLARE vowels AS STRING\n   SET vowels TO \"aeiouAEIOU\"\n\n   FOR EACH CHARACTER IN input_string:\n      IF CHARACTER IS IN vowels:\n         ADD CHARACTER TO vowel_chars\n      ELSE:\n         ADD CHARACTER TO consonant_chars\n\n   RETURN CONCATENATED STRING OF vowel_chars + consonant_chars",
+            "step1_generated_spec": "Here's the pseudocode specification:\n\n```pseudocode\nPROVIDED PROCEDURE separate_vowels_and_consonants(input_string)\n   DECLARE vowel_chars, consonant_chars AS VECTORS OF CHARACTERS\n   DECLARE vowels AS STRING\n   SET vowels TO \"aeiouAEIOU\"\n\n   FOR EACH CHARACTER IN input_string:\n      IF CHARACTER IS IN vowels:\n         ADD CHARACTER TO vowel_chars\n      ELSE:\n         ADD CHARACTER TO consonant_chars\n\n   RETURN CONCATENATED STRING OF vowel_chars + consonant_chars",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```\ndef separate_vowels_and_consonants(input_string):\n    vowel_chars = []\n    consonant_chars = []\n    vowels = \"aeiouAEIOU\"\n\n    for char in input_string:\n        if char.lower() in vowels:\n            vowel_chars.append(char)\n        else:\n            consonant_chars.append(char)\n\n    return \"\".join(vowel_chars + consonant_chars)",
+            "step2_generated_code_clean": "```\ndef separate_vowels_and_consonants(input_string):\n    vowel_chars = []\n    consonant_chars = []\n    vowels = \"aeiouAEIOU\"\n\n    for char in input_string:\n        if char.lower() in vowels:\n            vowel_chars.append(char)\n        else:\n            consonant_chars.append(char)\n\n    return \"\".join(vowel_chars + consonant_chars)",
+            "step2_status": "FAIL: Code validation failed. Error: File \"/var/folders/kk/_vllh4kd345g6rq2q6yd_c5h0000gn/T/tmpog5ustwx.py\", line 6\n    ```\n    ^\nSyntaxError: invalid syntax, Output: None"
+        }
+    ]
+}

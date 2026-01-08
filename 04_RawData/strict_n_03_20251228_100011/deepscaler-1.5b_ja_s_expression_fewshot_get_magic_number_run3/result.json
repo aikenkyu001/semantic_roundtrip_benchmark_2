@@ -1,0 +1,10 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_status": "FAIL: API call failed"
+        }
+    ]
+}

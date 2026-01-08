@@ -1,0 +1,36 @@
+以下のS式仕様に基づいてPython関数を生成してください。
+Pythonコードブロックのみを出力し、説明は含めないでください。
+
+例1:
+S式仕様:
+(define (get-magic-number) 42)
+
+Pythonコード:
+def get_magic_number():
+    return 42
+
+例2:
+S式仕様:
+(define (fizzbuzz n)
+  (cond
+    ((= (mod n 15) 0) "FizzBuzz")
+    ((= (mod n 3) 0) "Fizz")
+    ((= (mod n 5) 0) "Buzz")
+    (else n)))
+
+Pythonコード:
+def fizzbuzz(n):
+    if n % 15 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return n
+
+タスク:
+S式仕様:
+{specification}
+
+Pythonコード:

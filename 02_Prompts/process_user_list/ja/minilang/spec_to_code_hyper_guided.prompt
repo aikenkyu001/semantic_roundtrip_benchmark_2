@@ -1,0 +1,43 @@
+あなたは熟練したPythonプログラマーです。あなたのタスクは、Minilang仕様からPython関数を生成することです。
+
+このタスクを達成するために、以下の指示に正確に従ってください。
+
+### 指示 ###
+
+1.  **Minilangの分析:** まず、提供されたMinilang仕様について段階的に考えてください。
+    -   `FUNCTION`名と引数を特定します。
+    -   `LOOP`と`INITIALIZE`キーワードを認識します。これはアキュムレータリストを持つループを示します。
+    -   中心的なロジックのための`CALCULATE`と`DETERMINE rank`ブロックを理解します。
+    -   最終結果を構築するための`CREATE string`と`ADD`コマンドに注意します。
+
+2.  **翻訳規則の適用 (MinilangからPythonへ):**
+    -   `FUNCTION ...` は `def ...:` になります。
+    -   `INITIALIZE ... as empty list` は `[]` になります。
+    -   `LOOP through each user in user_data:` は `for user in user_data:` になります。
+    -   `CALCULATE average ...` は、空のケースのチェックを含む必要な算術演算に翻訳されます。
+    -   `DETERMINE rank: IF ... ELSE IF ...` は `if/elif/else` チェーンになります。
+    -   `CREATE string ... with format ...` はPythonのf文字列になります。
+    -   `ADD string to output_list` は `output_list.append(...)` になります。
+
+3.  **コードの生成:** 分析に基づいて、Pythonコードのみを生成してください。
+
+4.  **厳格な出力形式:**
+    -   Pythonコードのみを**必ず**出力してください。
+    -   Markdownブロック（'''python）を含めないでください。
+    -   説明、コメント、その他コード以外のテキストを含めないでください。
+
+### タスク ###
+
+Minilang仕様:
+{specification}
+
+Chain of Thought:
+1.  The Minilang defines a function `process_user_list`.
+2.  I will start by defining the Python function and initializing an empty list.
+3.  The `LOOP` keyword tells me to write a `for` loop.
+4.  Inside the loop, I'll implement the average calculation, including the specified default for an empty list.
+5.  I will use an `if/elif/else` chain for the rank determination logic.
+6.  I will use a Python f-string to create the final formatted string.
+7.  I will append the string to my list and return the list after the loop.
+
+Pythonコード:

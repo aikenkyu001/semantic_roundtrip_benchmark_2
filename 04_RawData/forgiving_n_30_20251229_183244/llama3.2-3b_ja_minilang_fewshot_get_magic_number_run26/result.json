@@ -1,0 +1,15 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "get_magic_number: f() = 42",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\nimport functools\n\n# \u30b9\u30af\u30ea\u30d7\u30c8\u3092\u5b9a\u7fa9\u3059\u308b\u95a2\u6570\n@functools.wraps(get_magic_number)\ndef get_magic_number():\n    \"\"\" Magic Number \"\"\"\n    return 42\n\nif __name__ == \"__main__\":\n    # get_magic_number\u3092\u547c\u3073\u51fa\u3057\u3066\u3001Magic Number \u3092\u53d6\u5f97\u3057\u307e\u3059\u3002\n    magic = get_magic_number()\n    print(magic)\n```",
+            "step2_generated_code_clean": "import functools\n\n# \u30b9\u30af\u30ea\u30d7\u30c8\u3092\u5b9a\u7fa9\u3059\u308b\u95a2\u6570\n@functools.wraps(get_magic_number)\ndef get_magic_number():\n    \"\"\" Magic Number \"\"\"\n    return 42\n\nif __name__ == \"__main__\":\n    # get_magic_number\u3092\u547c\u3073\u51fa\u3057\u3066\u3001Magic Number \u3092\u53d6\u5f97\u3057\u307e\u3059\u3002\n    magic = get_magic_number()\n    print(magic)",
+            "step2_status": "FAIL: Code execution failed or returned incorrect value. Error: Traceback (most recent call last):\n  File \"/var/folders/kk/_vllh4kd345g6rq2q6yd_c5h0000gn/T/tmpgi0hz_vm.py\", line 4, in <module>\n    @functools.wraps(get_magic_number)\nNameError: name 'get_magic_number' is not defined, Output: None"
+        }
+    ]
+}

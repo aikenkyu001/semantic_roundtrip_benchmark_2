@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```minilang\nFUNCTION fizzbuzz(n):\n  IF (n MOD 15) == 0 THEN \"FizzBuzz\" ELSE\n  IF (n MOD 3) == 0 THEN \"Fizz\" ELSE\n  IF (n MOD 5) == 0 THEN \"Buzz\" ELSE\n  n\n```",
+            "step1_generated_spec": "FUNCTION fizzbuzz(n):\n  IF (n MOD 15) == 0 THEN \"FizzBuzz\" ELSE\n  IF (n MOD 3) == 0 THEN \"Fizz\" ELSE\n  IF (n MOD 5) == 0 THEN \"Buzz\" ELSE\n  n",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

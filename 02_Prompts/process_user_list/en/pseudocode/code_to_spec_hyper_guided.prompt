@@ -1,0 +1,47 @@
+You are an expert system designer. Your task is to translate a Python function into a pseudocode specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name and its parameters.
+    -   Analyze the main loop structure.
+    -   Identify data extraction from objects (e.g., getting values from a dictionary).
+    -   Analyze conditional logic for calculations (e.g., handling empty lists).
+    -   Analyze conditional logic for ranking.
+    -   Identify how the final output string is formatted and aggregated.
+
+2.  **Apply Translation Rules:** Convert Python constructs to pseudocode.
+    -   `for user in user_data:` becomes `FOR EACH user in user_data:`.
+    -   `sum(scores) / len(scores)` becomes `sum of scores / count of scores`.
+    -   `if/elif/else` becomes `IF/ELSE IF/ELSE`.
+    -   `f-string` formatting becomes `FORMAT ... as "..."`.
+    -   `.append()` becomes `APPEND ... to ...`.
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the pseudocode.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw pseudocode text.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+'''python
+{source_code}
+'''
+
+Chain of Thought:
+1.  The function is `process_user_list` and takes `user_data`.
+2.  It initializes an empty list `output_list`.
+3.  It loops through each `user` in `user_data`.
+4.  Inside the loop, it gets `scores` and `name`.
+5.  It calculates `avg_score`, handling the case where `scores` is empty.
+6.  It uses `if/elif/else` to determine a `rank` based on `avg_score`.
+7.  It formats a string with the user's name, average score, and rank.
+8.  It appends this string to `output_list`.
+9.  Finally, it returns `output_list`.
+10. I will translate these steps into the pseudocode format.
+
+Pseudocode Specification:

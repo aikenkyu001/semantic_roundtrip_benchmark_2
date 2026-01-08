@@ -1,0 +1,31 @@
+以下のPythonコードをMinilang仕様に翻訳してください。
+Minilang仕様のみを出力し、説明は含めないでください。
+
+例1:
+Pythonコード:
+def fizzbuzz(n):
+    if n % 15 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return n
+
+Minilang仕様:
+FUNCTION fizzbuzz(n):
+  CHECK n MOD 15 IS 0:
+    RETURN "FizzBuzz"
+  ELSE CHECK n MOD 3 IS 0:
+    RETURN "Fizz"
+  ELSE CHECK n MOD 5 IS 0:
+    RETURN "Buzz"
+  ELSE:
+    RETURN n
+
+タスク:
+Pythonコード:
+{source_code}
+
+Minilang仕様:

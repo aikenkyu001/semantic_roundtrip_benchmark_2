@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "def get_magic_number():\n    return 42\n\n(function (get_magic_number) (parameters (a) (b))\n  (list '= 42\n        (lambda (x) (+ x x)\n          (if (= x b)\n              'magic_number\n              'otherwise))))\n\nfunction (get_sum a b)\n  (list '+ a b)\n\n(list '= a b\n     (list '= 42\n           (call get_sum a b))",
+            "step1_generated_spec": "def get_magic_number():\n    return 42\n\n(function (get_magic_number) (parameters (a) (b))\n  (list '= 42\n        (lambda (x) (+ x x)\n          (if (= x b)\n              'magic_number\n              'otherwise))))\n\nfunction (get_sum a b)\n  (list '+ a b)\n\n(list '= a b\n     (list '= 42\n           (call get_sum a b))",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

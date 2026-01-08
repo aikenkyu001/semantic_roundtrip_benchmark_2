@@ -1,0 +1,43 @@
+You are an expert Python programmer. Your task is to generate a Python function from a Minilang specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Minilang:** First, think step-by-step about the provided Minilang specification.
+    -   Identify the `FUNCTION` name and parameters.
+    -   Recognize the `LOOP` and `INITIALIZE` keywords, indicating a loop with an accumulator list.
+    -   Understand the `CALCULATE` and `DETERMINE rank` blocks for the core logic.
+    -   Note the `CREATE string` and `ADD` commands for building the final result.
+
+2.  **Apply Translation Rules (Minilang to Python):**
+    -   `FUNCTION ...` becomes `def ...:`.
+    -   `INITIALIZE ... as empty list` becomes `[]`.
+    -   `LOOP through each user in user_data:` becomes `for user in user_data:`.
+    -   `CALCULATE average ...` translates to the necessary arithmetic, including an `if` check for the empty case.
+    -   `DETERMINE rank: IF ... ELSE IF ...` becomes an `if/elif/else` chain.
+    -   `CREATE string ... with format ...` becomes a Python f-string.
+    -   `ADD string to output_list` becomes `output_list.append(...)`.
+
+3.  **Generate Code:** Based on your analysis, generate ONLY the Python code.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Python code.
+    -   Do NOT include the markdown block ('''python).
+    -   Do NOT include any explanation, comments, or any text other than the code itself.
+
+### TASK ###
+
+Minilang Specification:
+{specification}
+
+Chain of Thought:
+1.  The Minilang defines a function `process_user_list`.
+2.  I will start by defining the Python function and initializing an empty list.
+3.  The `LOOP` keyword tells me to write a `for` loop.
+4.  Inside the loop, I'll implement the average calculation, including the specified default for an empty list.
+5.  I will use an `if/elif/else` chain for the rank determination logic.
+6.  I will use an f-string to create the final formatted string.
+7.  I will append the string to my list and return the list after the loop.
+
+Python Code:

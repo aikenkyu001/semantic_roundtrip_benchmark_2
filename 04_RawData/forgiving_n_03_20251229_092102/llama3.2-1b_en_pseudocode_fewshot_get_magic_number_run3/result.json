@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "def get_sum(a, b):\n  RETURN a + b\nFUNCTION get_magic_number()\n  RETURN 42\ndef magic_number_1(a, b):\n  RETURN 43\ndef magic_number_2(a, b):\n  RETURN -23\ndef get_even_odd(a, b):\n  IF (a % 2 == 0 AND b % 2 != 0) OR (a % 2 != 0 AND b % 2 == 0)\n    THEN return True\n  ELSE\n    RETURN False\nFUNCTION sum_of_numbers(a, b)\n  RETURN a + b\ndef average(a, b):\n  RETURN (a + b) / 2.0",
+            "step1_generated_spec": "def get_sum(a, b):\n  RETURN a + b\nFUNCTION get_magic_number()\n  RETURN 42\ndef magic_number_1(a, b):\n  RETURN 43\ndef magic_number_2(a, b):\n  RETURN -23\ndef get_even_odd(a, b):\n  IF (a % 2 == 0 AND b % 2 != 0) OR (a % 2 != 0 AND b % 2 == 0)\n    THEN return True\n  ELSE\n    RETURN False\nFUNCTION sum_of_numbers(a, b)\n  RETURN a + b\ndef average(a, b):\n  RETURN (a + b) / 2.0",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "Here is a code that converts the below Python code into an imitation of the \"similar but different\" code style:\n\nSimilar but Different Code:\ndef get_sum(a, b):\n \n return a + b\n\n\u95a2\u6570 get_sum(a, b):\n \n \u623b\u308a\u5024 a + b",
+            "step1_generated_spec": "Here is a code that converts the below Python code into an imitation of the \"similar but different\" code style:\n\nSimilar but Different Code:\ndef get_sum(a, b):\n \n return a + b\n\n\u95a2\u6570 get_sum(a, b):\n \n \u623b\u308a\u5024 a + b",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

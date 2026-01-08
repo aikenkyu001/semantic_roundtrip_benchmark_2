@@ -1,0 +1,18 @@
+関数 process_user_list(user_data):
+  output_list を空のリストとして初期化
+  user_data 内の各ユーザーに対してループ:
+    ユーザーから scores を取得、なければ空リスト
+    ユーザーから name を取得、なければ "Unknown"
+    
+    scores の平均を計算し avg_score とする、scoresが空ならデフォルトは 0.0
+    
+    ランクを決定:
+      もし avg_score が 90 以上なら、ランクは "Excellent"
+      もしそうでなく avg_score が 70 以上なら、ランクは "Good"
+      もしそうでなく avg_score が 0 より大きいなら、ランクは "Fair"
+      それ以外の場合、ランクは "N/A"
+      
+    name, avg_score, rank から "<name>: Average <avg_score> (Rank: <rank>)" という形式で文字列を作成
+    作成した文字列を output_list に追加
+    
+  output_list を返す

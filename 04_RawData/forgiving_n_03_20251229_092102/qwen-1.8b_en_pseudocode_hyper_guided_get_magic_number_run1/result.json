@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "FUNCTION get_ magic_number(): RETURN 42\n\nFUNCTION get_magic_number() {\n    return 42;\n}\n\nRETURN 42;",
+            "step1_generated_spec": "FUNCTION get_ magic_number(): RETURN 42\n\nFUNCTION get_magic_number() {\n    return 42;\n}\n\nRETURN 42;",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

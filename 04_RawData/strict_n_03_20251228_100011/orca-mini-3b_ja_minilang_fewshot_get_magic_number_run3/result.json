@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "There is no language code provided in the given Python code. Could you please provide the code so that I can assist you better?",
+            "step1_generated_spec": "There is no language code provided in the given Python code. Could you please provide the code so that I can assist you better?",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

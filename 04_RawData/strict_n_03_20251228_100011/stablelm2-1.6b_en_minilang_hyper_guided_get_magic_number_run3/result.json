@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "get_magic_number:\n    = \"f() = \"\n    \n```minilang\nget_magic_number:\n    = \"f() = \"\n    \n```minilang\n```\nget_magic_number():\n    return \"*\"\n```minilang\n```\nget_magic_number():\n    return \"*\"\n```minilang\n```minilang\n__END__\n\nCOPYRIGHT 2021, YOUR NAME. MINILANG SPECIFICATION Converter.\nLicense: MIT.\nAuthor: Your Name.\nEmail: your.name@example.com.\nVersion: __V__.\n\n```minilang\ndef get_magic_number(): \n    return \"*\"\n    \n```minilang\n```\nget_magic_number:\n    = \"*\"\n    \n```minilang\n```\n```python\nimport minilang as lm\n\ncode = \"\"\"\n{\n  \\\"get_magic_number\\\": {\n    \\\"return\\\": \\\"$1\\\",\n    \\\"outputType\\\": \\\"string\\\",\n    \\\"outputName\\\": \\\"magic_number\\\"\n  }\n}\n\"\"\"\n\ndef convert_to_minilang(code_block):\n    code = code_block.replace('def get_\\'(', 'fn .')\n    code = code.replace(\"return ',= ')\n    code = code.replace(\"\\\"\", \"\\\"\")\n    \n    return lm.parse(code)\n\nminilang_code = convert_to_minilang(code)\nprint(minilang_code.tostring())\n```",
+            "step1_generated_spec": "get_magic_number:\n    = \"f() = \"",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

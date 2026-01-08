@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u4ee5\u4e0b\u306e\u30c7\u30fc\u30bf\u304c\u3042\u308a\u307e\u3059\u3002\n\n| Python\u30b3\u30fc\u30c9 | \u7591\u4f3c\u30b3\u30fc\u30c9\u4ed5\u69d8 | \u30bf\u30b9\u30af |\n|-------------|-----------------|--------|\n| def get_sum(a, b): return a + b | \u95a2\u6570get_sum(a, b): \u623b\u308a\u5024a + b | \u8da3\u5473\u306e\u6570\u5b5742\u3092\u8fd4\u3059\u95a2\u6570 |\n| Python\u30b3\u30fc\u30c9: def get_magic_number(): return 42 | \u7591\u4f3c\u30b3\u30fc\u30c9\u4ed5\u69d8: \u95a2\u6570get_magic_number(): \u623b\u308a\u502442 | \u8da3\u5473\u306e\u6570\u5b5742\u3092\u8fd4\u3059\u95a2\u6570 |",
+            "step1_generated_spec": "\u4ee5\u4e0b\u306e\u30c7\u30fc\u30bf\u304c\u3042\u308a\u307e\u3059\u3002\n\n| Python\u30b3\u30fc\u30c9 | \u7591\u4f3c\u30b3\u30fc\u30c9\u4ed5\u69d8 | \u30bf\u30b9\u30af |\n|-------------|-----------------|--------|\n| def get_sum(a, b): return a + b | \u95a2\u6570get_sum(a, b): \u623b\u308a\u5024a + b | \u8da3\u5473\u306e\u6570\u5b5742\u3092\u8fd4\u3059\u95a2\u6570 |\n| Python\u30b3\u30fc\u30c9: def get_magic_number(): return 42 | \u7591\u4f3c\u30b3\u30fc\u30c9\u4ed5\u69d8: \u95a2\u6570get_magic_number(): \u623b\u308a\u502442 | \u8da3\u5473\u306e\u6570\u5b5742\u3092\u8fd4\u3059\u95a2\u6570 |",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "def calculate_total_cost(invoice_line_items):\n    total = 0\n    for item in invoice_line_items:\n        if isinstance(item, dict):\n            total += calculate_total_cost(item)\n        elif isinstance(item, list):\n            total += get_sum(item[0], item[1])\n    return total\n\nget_magic_number()",
+            "step1_generated_spec": "def calculate_total_cost(invoice_line_items):\n    total = 0\n    for item in invoice_line_items:\n        if isinstance(item, dict):\n            total += calculate_total_cost(item)\n        elif isinstance(item, list):\n            total += get_sum(item[0], item[1])\n    return total\n\nget_magic_number()",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

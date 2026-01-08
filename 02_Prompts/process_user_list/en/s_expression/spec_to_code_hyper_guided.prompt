@@ -1,0 +1,42 @@
+You are an expert Python programmer. Your task is to generate a Python function from an S-expression specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the S-expression:** First, think step-by-step about the provided S-expression.
+    -   Identify the main function definition `(define ...)`
+    -   Recognize the `(map (lambda ...))` structure, which indicates a loop over a list that generates a new list. This can be implemented with a list comprehension or a `for` loop.
+    -   Analyze the `(let* ...)` block, which defines local variables.
+    -   Understand the conditional `(if ...)` and `(cond ...)` expressions for logic.
+    -   Identify the `(format ...)` expression for string creation.
+
+2.  **Apply Translation Rules (S-expression to Python):**
+    -   `(map (lambda (user) ...) user_data)` can be translated to `[... for user in user_data]`.
+    -   `(let* ((var val) ...))` can be translated to sequential variable assignments.
+    -   `(get-or-default user 'scores '())` becomes `user.get('scores', [])`.
+    -   `(/ (sum scores) (length scores))` becomes `sum(scores) / len(scores)`.
+    -   `(cond ((>= avg_score 90) "Excellent") ...)` becomes an `if/elif/else` chain.
+    -   `(format "..." ...)` becomes a Python f-string.
+
+3.  **Generate Code:** Based on your analysis, generate ONLY the Python code.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Python code.
+    -   Do NOT include the markdown block ('''python).
+    -   Do NOT include any explanation, comments, or any text other than the code itself.
+
+### TASK ###
+
+S-expression Specification:
+{specification}
+
+Chain of Thought:
+1.  The S-expression defines a function `process_user_list`.
+2.  The `map` and `lambda` indicate I should loop through the input list `user_data`. A list comprehension is a concise way to do this, but a `for` loop is also fine and perhaps more readable. I will use a `for` loop and an `output_list`.
+3.  The `let*` block shows the variables I need to calculate for each user.
+4.  I will implement the `avg_score` calculation with a Python ternary `if/else` or a standard `if` block.
+5.  I will translate the `cond` block into a standard `if/elif/else` structure for determining the rank.
+6.  I will use a Python f-string for the final string formatting.
+
+Python Code:

@@ -1,0 +1,42 @@
+あなたは熟練したPythonプログラマーです。あなたのタスクは、S式仕様からPython関数を生成することです。
+
+このタスクを達成するために、以下の指示に正確に従ってください。
+
+### 指示 ###
+
+1.  **S式の分析:** まず、提供されたS式について段階的に考えてください。
+    -   メインの関数定義 `(define ...)` を特定します。
+    -   `(map (lambda ...))` 構造を認識します。これはリストをループ処理して新しいリストを生成することを示しており、リスト内包表記または `for` ループで実装できます。
+    -   ローカル変数を定義する `(let* ...)` ブロックを分析します。
+    -   ロジックのための条件式 `(if ...)` と `(cond ...)` を理解します。
+    -   文字列作成のための `(format ...)` 式を特定します。
+
+2.  **翻訳規則の適用 (S式からPythonへ):**
+    -   `(map (lambda (user) ...) user_data)` は `[... for user in user_data]` に翻訳できます。
+    -   `(let* ((var val) ...))` は逐次的な変数割り当てに翻訳できます。
+    -   `(get-or-default user 'scores '())` は `user.get('scores', [])` になります。
+    -   `(/ (sum scores) (length scores))` は `sum(scores) / len(scores)` になります。
+    -   `(cond ((>= avg_score 90) "Excellent") ...)` は `if/elif/else` チェーンになります。
+    -   `(format "..." ...)` はPythonのf文字列になります。
+
+3.  **コードの生成:** 分析に基づいて、Pythonコードのみを生成してください。
+
+4.  **厳格な出力形式:**
+    -   Pythonコードのみを**必ず**出力してください。
+    -   Markdownブロック（'''python）を含めないでください。
+    -   説明、コメント、その他コード以外のテキストを含めないでください。
+
+### タスク ###
+
+S式仕様:
+{specification}
+
+Chain of Thought:
+1.  The S-expression defines a function `process_user_list`.
+2.  The `map` and `lambda` indicate I should loop through the input list `user_data`. A list comprehension is a concise way to do this, but a `for` loop is also fine and perhaps more readable. I will use a `for` loop and an `output_list`.
+3.  The `let*` block shows the variables I need to calculate for each user.
+4.  I will implement the `avg_score` calculation with a Python ternary `if/else` or a standard `if` block.
+5.  I will translate the `cond` block into a standard `if/elif/else` structure for determining the rank.
+6.  I will use a Python f-string for the final string formatting.
+
+Pythonコード:

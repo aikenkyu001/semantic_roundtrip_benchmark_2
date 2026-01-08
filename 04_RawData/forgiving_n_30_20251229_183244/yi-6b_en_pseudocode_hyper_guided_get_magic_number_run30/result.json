@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "FUNCTION get_magic_number():\n    RETURN 42\n```text\nThat is correct! Here's the pseudocode for your function in a strict output format as per your instructions.\n\nFUNCTION get_magic_number():\n    RETURN 42\n```",
+            "step1_generated_spec": "That is correct! Here's the pseudocode for your function in a strict output format as per your instructions.\n\nFUNCTION get_magic_number():\n    RETURN 42",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

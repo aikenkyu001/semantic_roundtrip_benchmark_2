@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "Example 1 (Python Code):\n```python\ndef get_sum(a, b):\n    \"\"\"\n    Returns the sum of two numbers.\n    \n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n        \n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b\n```\nExample 1 (Python Code) as requested by you:",
+            "step1_generated_spec": "def get_sum(a, b):\n    \"\"\"\n    Returns the sum of two numbers.\n    \n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n        \n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

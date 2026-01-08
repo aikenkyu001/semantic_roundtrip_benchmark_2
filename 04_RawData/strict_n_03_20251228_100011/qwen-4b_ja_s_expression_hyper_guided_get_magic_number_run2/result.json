@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```s\nfunction name(parameters) returns value {\n    // \u5177\u4f53\u5b9e\u73b0\u4ee3\u7801\n}\n```\n\n\u3053\u306eS\u5f0f\u306f\u3001Python\u95a2\u6570\u306e\u540d\u524d\u3001\u30d1\u30e9\u30e1\u30fc\u30bf\u306e\u540d\u524d\u3001\u623b\u308a\u5024\u306e\u540d\u524d\u3001\u304a\u3088\u3073\u5177\u4f53\u7684\u5b9f\u88c5\u3092\u793a\u3057\u307e\u3059\u3002",
+            "step1_generated_spec": "function name(parameters) returns value {\n    // \u5177\u4f53\u5b9e\u73b0\u4ee3\u7801\n}",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "Function: `get_magic_number()`\nInput: None\nOutput: Return 42\n```python\n# No explanation needed for this Python function. The pseudocode specifies it does nothing.\n\n```python\n```",
+            "step1_generated_spec": "# No explanation needed for this Python function. The pseudocode specifies it does nothing.",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

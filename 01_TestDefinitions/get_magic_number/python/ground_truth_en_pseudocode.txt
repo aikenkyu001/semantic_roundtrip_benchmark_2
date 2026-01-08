@@ -1,0 +1,2 @@
+FUNCTION get_magic_number():
+  RETURN 42

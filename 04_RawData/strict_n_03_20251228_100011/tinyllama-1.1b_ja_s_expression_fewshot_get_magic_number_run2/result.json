@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "S\u5f0f\u4ed5\u69d8\u306e\u307f\u3092\u51fa\u529b\u3057\u3001\u8aac\u660e\u306f\u4e0d\u8981\u3067\u3059\u3002\n\n\u4f8b2:\nPython\u30b3\u30fc\u30c9:\ndef add_numbers(a, b):\n    return a + b\n\nS\u5f0f\u4ed5\u69d8:\n(function (name add_numbers) (parameters (param a) (param b)) (returns (value (+ a b))))\n\n\u30bf\u30b9\u30af:\nPython\u30b3\u30fc\u30c9:\ndef sum_of_numbers():\n    return 42\n\nS\u5f0f\u4ed5\u69d8:\n(function (name sum_of_numbers) (returns (value 42)))",
+            "step1_generated_spec": "S\u5f0f\u4ed5\u69d8\u306e\u307f\u3092\u51fa\u529b\u3057\u3001\u8aac\u660e\u306f\u4e0d\u8981\u3067\u3059\u3002\n\n\u4f8b2:\nPython\u30b3\u30fc\u30c9:\ndef add_numbers(a, b):\n    return a + b\n\nS\u5f0f\u4ed5\u69d8:\n(function (name add_numbers) (parameters (param a) (param b)) (returns (value (+ a b))))\n\n\u30bf\u30b9\u30af:\nPython\u30b3\u30fc\u30c9:\ndef sum_of_numbers():\n    return 42\n\nS\u5f0f\u4ed5\u69d8:\n(function (name sum_of_numbers) (returns (value 42)))",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

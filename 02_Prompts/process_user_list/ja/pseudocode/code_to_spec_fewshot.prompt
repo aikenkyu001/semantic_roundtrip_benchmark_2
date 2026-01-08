@@ -1,0 +1,31 @@
+以下のPythonコードを擬似コードの仕様書に翻訳してください。
+擬似コードの仕様書のみを出力し、説明は含めないでください。
+
+例1:
+Pythonコード:
+def fizzbuzz(n):
+    if n % 15 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return n
+
+擬似コード仕様書:
+関数 fizzbuzz(n):
+  もし n を 15 で割った余りが 0 ならば:
+    "FizzBuzz" を返す
+  もしそうでなく、n を 3 で割った余りが 0 ならば:
+    "Fizz" を返す
+  もしそうでなく、n を 5 で割った余りが 0 ならば:
+    "Buzz" を返す
+  そうでなければ:
+    n を返す
+
+タスク:
+Pythonコード:
+{source_code}
+
+擬似コード仕様書:

@@ -1,0 +1,16 @@
+以下のS式仕様に基づいてPython関数を生成してください。
+Pythonコードブロックのみを出力し、説明は不要です。
+
+例1:
+S式仕様:
+(function (name get_sum) (parameters (param a) (param b)) (returns (value (+ a b))))
+
+Pythonコード:
+def get_sum(a, b):
+    return a + b
+
+タスク:
+S式仕様:
+{specification}
+
+Pythonコード:

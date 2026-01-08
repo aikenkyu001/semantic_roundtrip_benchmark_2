@@ -1,0 +1,93 @@
+{
+    "status": "FAIL: Cycle 10 failed.",
+    "cycles_completed": 9,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 3,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 4,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 5,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 6,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 7,
+            "step1_raw_spec": "```python\n\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42\n```\n\n###\u7591\u4f3c\u30b3\u30fc\u30c9\u3092\u751f\u6210\u3059\u308b\u305f\u3081\u306e\u30eb\u30fc\u30eb\n\n1. \u95a2\u6570\u540d\u306e\u524d\u306b\u300c\u95a2\u6570\u300d\u3068\u5165\u308b\u3002\n2. \u30d1\u30e9\u30e1\u30fc\u30bf\u540d\u306e\u524d\u306b\u300c\u300d\u3067\u56f2\u3080\u3002\n3. \u623b\u308a\u5024\u306e\u524d\u306b\u300c\u623b\u308a\u5024\u300d\u3001\u5f8c\u306b\u300c\u300d\u3067\u56f2\u3080\u3002",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 8,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 9,
+            "step1_raw_spec": "```python\n\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42\n```\n\n```python\n\u95a2\u6570 get_sum(a, b):\n    \u623b\u308a\u5024 a + b\n\n\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42\n```",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 10,
+            "step1_raw_spec": "def get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "def get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

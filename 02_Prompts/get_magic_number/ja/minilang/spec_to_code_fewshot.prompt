@@ -1,0 +1,16 @@
+以下のミニ言語仕様に基づいてPython関数を生成してください。
+Pythonコードブロックのみを出力し、説明は不要です。
+
+例1:
+ミニ言語仕様:
+add: f(a, b) = a + b
+
+Pythonコード:
+def add(a, b):
+    return a + b
+
+タスク:
+ミニ言語仕様:
+{specification}
+
+Pythonコード:

@@ -1,0 +1,12 @@
+function separate_vowels_and_consonants(input_string):
+  create an empty list for vowels: vowel_chars
+  create an empty list for consonants and others: consonant_chars
+  define a string of vowels: vowels = "aeiouAEIOU"
+
+  for each character in input_string:
+    if character is in vowels:
+      add character to vowel_chars
+    else:
+      add character to consonant_chars
+            
+  return concatenated string of vowel_chars and consonant_chars

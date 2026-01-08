@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```lisp\n(:function \n  :name \"get_sum\"\n  :parameters \n    [\n      :param 1 \n      :param 2\n    ]\n  :returns (+ 1 2))\n```",
+            "step1_generated_spec": "``lisp\n(:function \n  :name \"get_sum\"\n  :parameters \n    [\n      :param 1 \n      :param 2\n    ]\n  :returns (+ 1 2))\n``",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

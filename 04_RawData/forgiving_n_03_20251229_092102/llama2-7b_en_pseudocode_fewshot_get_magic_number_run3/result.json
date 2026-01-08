@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "Example 1:\nFUNCTION get_sum(a, b):\n  a + b",
+            "step1_generated_spec": "Example 1:\nFUNCTION get_sum(a, b):\n  a + b",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

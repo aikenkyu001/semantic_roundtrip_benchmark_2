@@ -1,0 +1,15 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "Here is the pseudocode specification:\n\n```\nSEPARATE_VOWELS_AND_CONSONANTS(input_string)\n    DECLARE vowels_to_append, consonants_to_append\n    SET vowels_to_append TO A LIST\n    SET consonants_to_append TO A LIST\n    DECLARE vowel_chars AS \"aeiouAEIOU\"\n    \n    FOR EACH CHARACTER IN input_string:\n        IF CHARACTER IS IN vowel_chars THEN\n            ADD CHARACTER TO vowels_to_append\n        ELSE\n            ADD CHARACTER TO consonants_to_append\n            \n    CONCATENATED STRING OF vowels_to_append + consonants_to_append\n```",
+            "step1_generated_spec": "SEPARATE_VOWELS_AND_CONSONANTS(input_string)\n    DECLARE vowels_to_append, consonants_to_append\n    SET vowels_to_append TO A LIST\n    SET consonants_to_append TO A LIST\n    DECLARE vowel_chars AS \"aeiouAEIOU\"\n    \n    FOR EACH CHARACTER IN input_string:\n        IF CHARACTER IS IN vowel_chars THEN\n            ADD CHARACTER TO vowels_to_append\n        ELSE\n            ADD CHARACTER TO consonants_to_append\n            \n    CONCATENATED STRING OF vowels_to_append + consonants_to_append",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```\ndef separate_vowels_and_consonants(input_string):\n    vowel_chars = \"aeiouAEIOU\"\n    vowels_to_append, consonants_to_append = [], []\n    \n    for char in input_string:\n        if char.lower() in vowel_chars:\n            vowels_to_append.append(char)\n        else:\n            consonants_to_append.append(char)\n            \n    return ''.join(vowels_to_append + consonants_to_append)",
+            "step2_generated_code_clean": "```\ndef separate_vowels_and_consonants(input_string):\n    vowel_chars = \"aeiouAEIOU\"\n    vowels_to_append, consonants_to_append = [], []\n    \n    for char in input_string:\n        if char.lower() in vowel_chars:\n            vowels_to_append.append(char)\n        else:\n            consonants_to_append.append(char)\n            \n    return ''.join(vowels_to_append + consonants_to_append)",
+            "step2_status": "FAIL: Code validation failed. Error: File \"/var/folders/kk/_vllh4kd345g6rq2q6yd_c5h0000gn/T/tmp4zmp7dgk.py\", line 6\n    ```\n    ^\nSyntaxError: invalid syntax, Output: None"
+        }
+    ]
+}

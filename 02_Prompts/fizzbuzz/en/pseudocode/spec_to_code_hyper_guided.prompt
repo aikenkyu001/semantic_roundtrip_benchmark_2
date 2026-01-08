@@ -1,0 +1,40 @@
+You are an expert Python programmer. Your task is to generate a Python function from a pseudocode specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Pseudocode:** First, think step-by-step about the provided pseudocode.
+    -   Find the `FUNCTION <name>(...):` part to identify the function name and parameters.
+    -   Analyze the conditional logic (`IF`/`ELSE IF`/`ELSE`) and their conditions (`MOD`, `IS`).
+    -   Identify the return values for each branch.
+
+2.  **Apply Translation Rules:** Convert the pseudocode to Python based on these rules.
+    -   `<name>` becomes the Python function name.
+    -   `IF`/`ELSE IF`/`ELSE` become `if`/`elif`/`else` with corresponding Python syntax for conditions.
+    -   `MOD` becomes the Python modulo operator `%`.
+    -   `IS 0` becomes `== 0`.
+    -   `RETURN <value>` becomes the Python `return <value>` statement.
+
+3.  **Generate Code:** Based on your analysis, generate ONLY the Python code.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Python code.
+    -   Do NOT include the markdown block ('''python).
+    -   Do NOT include any explanation, comments, or any text other than the code itself.
+
+### TASK ###
+
+Pseudocode Specification:
+{specification}
+
+Chain of Thought:
+1.  The pseudocode describes a function named `fizzbuzz` that takes one parameter `n`.
+2.  It has conditional logic:
+    -   If `n` modulo 15 is 0, it returns "FizzBuzz".
+    -   Else if `n` modulo 3 is 0, it returns "Fizz".
+    -   Else if `n` modulo 5 is 0, it returns "Buzz".
+    -   Otherwise, it returns `n`.
+3.  Based on the rules, I will translate this into Python code, using `def`, `if`/`elif`/`else`, `%` for modulo, and `==` for comparison.
+
+Python Code:

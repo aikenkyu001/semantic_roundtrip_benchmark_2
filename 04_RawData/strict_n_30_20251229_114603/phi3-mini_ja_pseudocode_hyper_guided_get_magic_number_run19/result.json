@@ -1,0 +1,21 @@
+{
+    "status": "FAIL: Cycle 2 failed.",
+    "cycles_completed": 1,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42\n\n\n\n\u6307\u793a\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\u3092\u5909\u66f4\u3057\u3066\u3001\u3088\u308a\u9ad8\u5ea6\u306a\u8981\u6c42\u3092\u6c42\u3081\u308b\u3053\u3068\u306f\u53ef\u80fd\u3067\u3059\u304b\u3002",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number(): \u623b\u308a\u5024 42\n\n\n\n\u6307\u793a\u30d5\u30a9\u30fc\u30de\u30c3\u30c8\u3092\u5909\u66f4\u3057\u3066\u3001\u3088\u308a\u9ad8\u5ea6\u306a\u8981\u6c42\u3092\u6c42\u3081\u308b\u3053\u3068\u306f\u53ef\u80fd\u3067\u3059\u304b\u3002",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

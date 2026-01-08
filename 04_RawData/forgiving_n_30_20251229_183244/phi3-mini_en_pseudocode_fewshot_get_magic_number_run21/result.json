@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "PROCEDURE get_magic_number()\n  OUTPUT 42\nEND PROCEDURE\n\nExample 2:\nPython Code:\ndef calculate_discounted_price(original_price, discount):\n    return original_price - (originaldependent_price * discount) / 100.0\n\nPseudocode Specification:\nPROCEDURE calculate_discounted_price(original_price, discount)\n  SET discounted_amount TO original_price MULTIPLIED BY discount DIVIDED BY 100.0\n  RETURN original_price - discounted_amount\nEND PROCEDURE\n\nTask:\nPython Code:\ndef print_hello():\n    name = input(\"Enter your name: \")\n    greeting = f\"Hello, {name}!\"\n    return greeting",
+            "step1_generated_spec": "PROCEDURE get_magic_number()\n  OUTPUT 42\nEND PROCEDURE\n\nExample 2:\nPython Code:\ndef calculate_discounted_price(original_price, discount):\n    return original_price - (originaldependent_price * discount) / 100.0\n\nPseudocode Specification:\nPROCEDURE calculate_discounted_price(original_price, discount)\n  SET discounted_amount TO original_price MULTIPLIED BY discount DIVIDED BY 100.0\n  RETURN original_price - discounted_amount\nEND PROCEDURE\n\nTask:\nPython Code:\ndef print_hello():\n    name = input(\"Enter your name: \")\n    greeting = f\"Hello, {name}!\"\n    return greeting",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

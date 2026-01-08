@@ -1,0 +1,42 @@
+あなたは熟練したシステム設計者です。あなたのタスクは、Python関数をMinilang仕様に翻訳することです。
+
+このタスクを達成するために、以下の指示に正確に従ってください。
+
+### 指示 ###
+
+1.  **Pythonコードの分析:** まず、提供されたPythonコードについて段階的に考えてください。
+    -   関数名と引数を特定します。
+    -   メインのループと変数の初期化を認識します。
+    -   計算とランク付けのための条件ロジックを分析します。
+    -   文字列フォーマットとリスト集計を特定します。
+
+2.  **翻訳規則の適用 (PythonからMinilangへ):**
+    -   `for`ループは`LOOP through...`になります。
+    -   変数割り当ては`INITIALIZE`または`CALCULATE`になります。
+    -   `if/elif/else`は`DETERMINE rank: IF... ELSE IF...`になります。
+    -   文字列フォーマットは`CREATE string from ... with format ...`になります。
+    -   `.append()`は`ADD string to ...`になります。
+
+3.  **仕様書の生成:** 分析に基づいて、Minilang仕様のみを生成してください。
+
+4.  **厳格な出力形式:**
+    -   Minilangのテキストのみを**必ず**出力してください。
+    -   説明、コメント、その他仕様書以外のテキストを含めないでください。
+
+### タスク ###
+
+Pythonコード:
+'''python
+{source_code}
+'''
+
+Chain of Thought:
+1.  The function is `process_user_list`.
+2.  It starts by initializing an empty `output_list`.
+3.  It then loops through the input `user_data`.
+4.  Inside the loop, it gets data, calculates an average, and determines a rank using conditional logic.
+5.  It creates a formatted string and adds it to the list.
+6.  Finally, it returns the list.
+7.  I will translate these procedural steps into the Minilang keywords.
+
+Minilang仕様:

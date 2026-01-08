@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "def get_magic_number():\n    RETURN 42\n\ndef get_sum(a, b):\n    RETURN a + b\n\ndef double(x):\n  RETURN x * 2\n\ndef get_cube(number):\n  RETURN number ** 3\n\ndef factorial(n):\n  IF n < 1\n    RETURN 0\n  ELSE\n    RETURN n * factorial(n-1)",
+            "step1_generated_spec": "def get_magic_number():\n    RETURN 42\n\ndef get_sum(a, b):\n    RETURN a + b\n\ndef double(x):\n  RETURN x * 2\n\ndef get_cube(number):\n  RETURN number ** 3\n\ndef factorial(n):\n  IF n < 1\n    RETURN 0\n  ELSE\n    RETURN n * factorial(n-1)",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

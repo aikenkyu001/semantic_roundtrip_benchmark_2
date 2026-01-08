@@ -1,0 +1,48 @@
+You are an expert system designer. Your task is to translate a Python function into a Minilang specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name and parameters.
+    -   Analyze the conditional logic (if/elif/else) and their conditions (e.g., modulo operations).
+    -   Identify the return values for each branch.
+
+2.  **Apply Translation Rules (Python to Minilang):**
+    -   Function definition `def <name>(<params>):` becomes `FUNCTION <name>(<params>):`.
+    -   `if`/`elif`/`else` statements become `CHECK`/`ELSE CHECK`/`ELSE`.
+    -   Conditions like `n % 15 == 0` become `n MOD 15 IS 0`.
+    -   `return <value>` becomes `RETURN <value>`.
+    -   String literals remain as they are.
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the Minilang specification.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Minilang text.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+'''python
+{source_code}
+'''
+
+Chain of Thought:
+1.  The Python function name is `fizzbuzz` and it takes one parameter `n`.
+2.  The logic involves multiple conditional checks. This translates to `CHECK`/`ELSE CHECK`/`ELSE` structure in Minilang.
+3.  Conditions like `n % 15 == 0` translate to `n MOD 15 IS 0`.
+4.  Return values like `"FizzBuzz"` or `n` are the expressions within the `RETURN` statements.
+5.  The final Minilang specification will be:
+    FUNCTION fizzbuzz(n):
+      CHECK n MOD 15 IS 0:
+        RETURN "FizzBuzz"
+      ELSE CHECK n MOD 3 IS 0:
+        RETURN "Fizz"
+      ELSE CHECK n MOD 5 IS 0:
+        RETURN "Buzz"
+      ELSE:
+        RETURN n
+
+Minilang Specification:

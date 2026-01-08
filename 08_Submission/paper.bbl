@@ -1,0 +1,48 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Austin et~al.(2021)Austin, Odena, Nye, Bosma, Chen, Sutton, Alemi, Johnson, Bieber, Zhou, et~al.]{austin2021program}
+Jack Austin, Augustin Odena, Maxwell Nye, Maarten Bosma, Mark Chen, Charles Sutton, Alexander~A. Alemi, Josh Johnson, Gabe Bieber, David Zhou, et~al.
+\newblock Program synthesis with large language models.
+\newblock \emph{arXiv preprint arXiv:2108.07732}, 2021.
+
+\bibitem[Berglund et~al.(2023)Berglund, Holtzman, Choi, and Lee]{berglund2023reversal}
+L.~Berglund, A.~Holtzman, Y.~Choi, and S.~Lee.
+\newblock The reversal curse: Llms trained on 'a is b' fail to learn 'b is a'.
+\newblock \emph{arXiv preprint arXiv:2309.12288}, 2023.
+
+\bibitem[Chen et~al.(2021)Chen, Tworek, Jun, Kaplan, de~Oliveira~Pinto, and Zaremba]{chen2021evaluating}
+Mark Chen, Jerry Tworek, Heewoo Jun, Jared Kaplan, H.~de~Oliveira~Pinto, and Wojciech Zaremba.
+\newblock Evaluating large language models trained on code.
+\newblock \emph{arXiv preprint arXiv:2107.03374}, 2021.
+
+\bibitem[Espejel et~al.(2025)Espejel, Garcia, and Rodriguez]{espejel2025code}
+J.~Espejel, M.~Garcia, and L.~Rodriguez.
+\newblock Code generation with small language models: A deep evaluation.
+\newblock \emph{arXiv preprint arXiv:2504.07343}, 2025.
+
+\bibitem[Madaan et~al.(2023)Madaan, Tandon, Zhang, Wang, Ji, Li, Yin, Bansal, Gupta, et~al.]{madaan2023self}
+Aman Madaan, Niket Tandon, Jinlyu Zhang, GroupBy Wang, Yiming Ji, Hanfang Li, Xiang Yin, Mohit Bansal, Prateek Gupta, et~al.
+\newblock Self-refine: Iterative refinement with self-feedback.
+\newblock \emph{arXiv preprint arXiv:2303.17651}, 2023.
+
+\bibitem[Ravi et~al.(2025)Ravi, Kumar, and Gupta]{ravi2025security}
+S.~Ravi, P.~Kumar, and R.~Gupta.
+\newblock Security degradation in iterative ai code generation.
+\newblock \emph{arXiv preprint arXiv:2506.11022}, 2025.
+
+\bibitem[Schaeffer et~al.(2023)Schaeffer, Gokaslan, Brubaker, Wen, Wong, Zhang, et~al.]{schaeffer2023emergent}
+Rylan Schaeffer, Braden Gokaslan, Ashley Brubaker, Tiffany Wen, Tong Wong, Caleb Zhang, et~al.
+\newblock Are emergent abilities of large language models a mirage?
+\newblock \emph{arXiv preprint arXiv:2304.15004}, 2023.
+
+\bibitem[Wang et~al.(2024)Wang, Ma, Li, and Zhang]{wang2024comprehensive}
+Y.~Wang, L.~Ma, X.~Li, and C.~Zhang.
+\newblock A comprehensive survey of small language models in the era of large language models.
+\newblock \emph{arXiv preprint arXiv:2411.03350}, 2024.
+
+\end{thebibliography}

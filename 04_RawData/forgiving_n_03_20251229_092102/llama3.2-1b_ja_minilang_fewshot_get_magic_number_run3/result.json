@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "def get_magic_number():\n    return 42\n\n\nadd: f(a, b) = a + b\n```python\ndef add(a, b):\n    return a + b\n```\n---\nget_magic_number: function\nparameters: a, b\nresult: int\nvalue: 42",
+            "step1_generated_spec": "def add(a, b):\n    return a + b",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

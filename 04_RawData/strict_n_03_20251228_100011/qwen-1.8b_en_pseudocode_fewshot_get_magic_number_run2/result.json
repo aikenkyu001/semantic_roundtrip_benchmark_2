@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "FUNCTION get_magic_number():  \n  RETURN 42  \n \n\nTask: \nPython Code: \ndef get_special_number():  \n  return 73068199533  \n\n\n\n\nPseudocode Specification: \nFUNCTION get_special_number():  \n  RETURN 73068199533",
+            "step1_generated_spec": "FUNCTION get_magic_number():  \n  RETURN 42  \n \n\nTask: \nPython Code: \ndef get_special_number():  \n  return 73068199533  \n\n\n\n\nPseudocode Specification: \nFUNCTION get_special_number():  \n  RETURN 73068199533",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

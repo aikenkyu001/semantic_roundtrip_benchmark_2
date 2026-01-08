@@ -1,0 +1,18 @@
+FUNCTION process_user_list(user_data):
+  INITIALIZE output_list as empty list
+  LOOP through each user in user_data:
+    GET scores from user, or empty list
+    GET name from user, or "Unknown"
+    
+    CALCULATE average of scores, name it avg_score, default to 0.0 if scores is empty
+    
+    DETERMINE rank:
+      IF avg_score is 90 or more, rank is "Excellent"
+      ELSE IF avg_score is 70 or more, rank is "Good"
+      ELSE IF avg_score is more than 0, rank is "Fair"
+      ELSE, rank is "N/A"
+      
+    CREATE string from name, avg_score, rank with format "<name>: Average <avg_score> (Rank: <rank>)"
+    ADD string to output_list
+    
+  RETURN output_list

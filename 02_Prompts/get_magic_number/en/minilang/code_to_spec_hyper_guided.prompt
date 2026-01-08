@@ -1,0 +1,36 @@
+You are an expert system designer. Your task is to translate a Python function into a minilang specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name from the `def` statement.
+    -   Identify the parameters from inside the `()`.
+    -   Identify the return value from the `return` statement.
+
+2.  **Apply Translation Rules:** Convert the Python code to minilang based on these rules.
+    -   The Python function name becomes the name before the colon `:`.
+    -   The Python parameters go inside `f(...)`. If no parameters, use `f()`.
+    -   The Python return value becomes the content after `= `.
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the minilang specification.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw minilang specification text.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+```python
+{source_code}
+```
+
+Chain of Thought:
+1.  The Python function name is `get_magic_number`.
+2.  The function has no parameters.
+3.  The function returns the integer value `42`.
+4.  Based on the rules, I will generate a minilang specification `get_magic_number: f() = 42`.
+
+Minilang Specification:

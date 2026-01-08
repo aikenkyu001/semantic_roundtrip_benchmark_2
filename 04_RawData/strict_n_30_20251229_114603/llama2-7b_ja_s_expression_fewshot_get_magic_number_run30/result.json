@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "S\u5f0f\u4ed5\u69d8\u3067\u306f\u3001Python\u306e\u95a2\u6570def\u6587\u3092S\u5f0f\u3067\u8868\u3059\u305f\u3081\u306b\u3001\u4ee5\u4e0b\u306e\u3088\u3046\u306a\u5f62\u5f0f\u3092\u4f7f\u7528\u3057\u307e\u3059\u3002\n\n\u4f8b1:\nPython\u30b3\u30fc\u30c9:\ndef get_sum(a, b):\n    return a + b\n\nS\u5f0f\u4ed5\u69d8:\n(function (name get_sum) (parameters (param a) (param b)) (returns (value (+ a b))))\n\n\u4f8b2:\nPython\u30b3\u30fc\u30c9:\ndef get_magic_number():\n    return 42\n\nS\u5f0f\u4ed5\u69d8:\n(function (name get_magic_number) () (returns (value 42)))\n\n\u306a\u304a\u3001S\u5f0f\u4ed5\u69d8\u3067\u306f\u3001Python\u306e\u95a2\u6570def\u6587\u306b\u76f8\u5f53\u3059\u308bS\u5f0f\u3067\u306f\u3001`(function name)`\u3067\u540d\u524d\u3092\u6307\u5b9a\u3057\u3001`(parameters param1 param2 ...)`\u3067\u5f15\u6570\u3092\u6307\u5b9a\u3057\u3001`(returns value)`\u3067\u8fd4\u5024\u3092\u6307\u5b9a\u3057\u307e\u3059\u3002",
+            "step1_generated_spec": "S\u5f0f\u4ed5\u69d8\u3067\u306f\u3001Python\u306e\u95a2\u6570def\u6587\u3092S\u5f0f\u3067\u8868\u3059\u305f\u3081\u306b\u3001\u4ee5\u4e0b\u306e\u3088\u3046\u306a\u5f62\u5f0f\u3092\u4f7f\u7528\u3057\u307e\u3059\u3002\n\n\u4f8b1:\nPython\u30b3\u30fc\u30c9:\ndef get_sum(a, b):\n    return a + b\n\nS\u5f0f\u4ed5\u69d8:\n(function (name get_sum) (parameters (param a) (param b)) (returns (value (+ a b))))\n\n\u4f8b2:\nPython\u30b3\u30fc\u30c9:\ndef get_magic_number():\n    return 42\n\nS\u5f0f\u4ed5\u69d8:\n(function (name get_magic_number) () (returns (value 42)))\n\n\u306a\u304a\u3001S\u5f0f\u4ed5\u69d8\u3067\u306f\u3001Python\u306e\u95a2\u6570def\u6587\u306b\u76f8\u5f53\u3059\u308bS\u5f0f\u3067\u306f\u3001`(function name)`\u3067\u540d\u524d\u3092\u6307\u5b9a\u3057\u3001`(parameters param1 param2 ...)`\u3067\u5f15\u6570\u3092\u6307\u5b9a\u3057\u3001`(returns value)`\u3067\u8fd4\u5024\u3092\u6307\u5b9a\u3057\u307e\u3059\u3002",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

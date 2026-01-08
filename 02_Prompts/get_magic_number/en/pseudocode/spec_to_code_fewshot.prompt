@@ -1,0 +1,17 @@
+Generate a Python function based on the following pseudocode specification.
+Output only the Python code block, with no explanation.
+
+Example 1:
+Pseudocode Specification:
+FUNCTION get_sum(a, b):
+  RETURN a + b
+
+Python Code:
+def get_sum(a, b):
+    return a + b
+
+Task:
+Pseudocode Specification:
+{specification}
+
+Python Code:

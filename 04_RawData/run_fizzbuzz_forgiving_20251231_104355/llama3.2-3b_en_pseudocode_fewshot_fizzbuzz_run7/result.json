@@ -1,0 +1,21 @@
+{
+    "status": "FAIL: Cycle 2 failed.",
+    "cycles_completed": 1,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "FUNCTION fizzbuzz(n):\n  IF n MOD 15 IS 0 THEN\n    RETURN \"FizzBuzz\"\n  ELSE IF n MOD 3 IS 0 THEN\n    RETURN \"Fizz\"\n  ELSE IF n MOD 5 IS 0 THEN\n    RETURN \"Buzz\"\n  ELSE\n    RETURN n",
+            "step1_generated_spec": "FUNCTION fizzbuzz(n):\n  IF n MOD 15 IS 0 THEN\n    RETURN \"FizzBuzz\"\n  ELSE IF n MOD 3 IS 0 THEN\n    RETURN \"Fizz\"\n  ELSE IF n MOD 5 IS 0 THEN\n    RETURN \"Buzz\"\n  ELSE\n    RETURN n",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42\n\ndef fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    else:\n        return n",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42\n\ndef fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    elif n % 3 == 0:\n        return \"Fizz\"\n    elif n % 5 == 0:\n        return \"Buzz\"\n    else:\n        return n",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "FUNCTION get_magic_number():\n  RETURN 42\n\nFUNCTION fizzbuzz(n):\n  IF n MOD 15 IS 0 THEN\n    RETURN \"FizzBuzz\"\n  ELSE IF n MOD 3 IS 0 THEN\n    RETURN \"Fizz\"\n  ELSE IF n MOD 5 IS 0 THEN\n    RETURN \"Buzz\"\n  ELSE\n    RETURN n\n\nFUNCTION main():\n  MAGIC_NUMBER = get_magic_number()\n  FIZZBUZZ = fizzbuzz(10)",
+            "step1_generated_spec": "FUNCTION get_magic_number():\n  RETURN 42\n\nFUNCTION fizzbuzz(n):\n  IF n MOD 15 IS 0 THEN\n    RETURN \"FizzBuzz\"\n  ELSE IF n MOD 3 IS 0 THEN\n    RETURN \"Fizz\"\n  ELSE IF n MOD 5 IS 0 THEN\n    RETURN \"Buzz\"\n  ELSE\n    RETURN n\n\nFUNCTION main():\n  MAGIC_NUMBER = get_magic_number()\n  FIZZBUZZ = fizzbuzz(10)",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

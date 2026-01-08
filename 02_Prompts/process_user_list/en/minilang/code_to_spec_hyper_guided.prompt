@@ -1,0 +1,42 @@
+You are an expert system designer. Your task is to translate a Python function into a Minilang specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name and parameters.
+    -   Recognize the main loop and variable initializations.
+    -   Analyze conditional logic for calculations and ranking.
+    -   Identify string formatting and list aggregation.
+
+2.  **Apply Translation Rules (Python to Minilang):**
+    -   A `for` loop becomes `LOOP through...`.
+    -   Variable assignment becomes `INITIALIZE` or `CALCULATE`.
+    -   `if/elif/else` becomes `DETERMINE rank: IF... ELSE IF...`.
+    -   String formatting becomes `CREATE string from ... with format ...`.
+    -   `.append()` becomes `ADD string to ...`.
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the Minilang specification.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Minilang text.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+'''python
+{source_code}
+'''
+
+Chain of Thought:
+1.  The function is `process_user_list`.
+2.  It starts by initializing an empty `output_list`.
+3.  It then loops through the input `user_data`.
+4.  Inside the loop, it gets data, calculates an average, and determines a rank using conditional logic.
+5.  It creates a formatted string and adds it to the list.
+6.  Finally, it returns the list.
+7.  I will translate these procedural steps into the Minilang keywords.
+
+Minilang Specification:

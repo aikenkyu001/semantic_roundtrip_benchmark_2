@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```python\nfunction_name (parameters) returns_value\n```\n\n\u5177\u4f53\u7684\u8f6c\u6362\u5982\u4e0b\uff1a\n\n```python\ndef get_magic_number():\n    return 42\n```\n\n converted to S:\nfunction_name ( ) returns_value",
+            "step1_generated_spec": "def get_magic_number():\n    return 42",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

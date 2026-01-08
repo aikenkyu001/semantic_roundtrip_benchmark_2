@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u4f8b1\u306e\u65e5\u672c\u8a9e\u6587\u3092\u307e\u3068\u3081\u3066\u51fa\u529b\u3057\u307e\u3059\u3002\n\nPython\u30b3\u30fc\u30c9:\n```python\ndef add(a, b):\n    return a + b\n\n\u30df\u30cb\u8a00\u8a9e\u4ed5\u69d8:\nadd: f(a, b) = a + b\n```\n\u30bf\u30b9\u30af:\nPython\u30b3\u30fc\u30c9:\n```python\ndef get_magic_number():\n    return 42\n\n\u30df\u30cb\u8a00\u8a9e\u4ed5\u69d8:\nget_magic_number: return 42\n```",
+            "step1_generated_spec": "\u4f8b1\u306e\u65e5\u672c\u8a9e\u6587\u3092\u307e\u3068\u3081\u3066\u51fa\u529b\u3057\u307e\u3059\u3002\n\nPython\u30b3\u30fc\u30c9:\n```python\ndef add(a, b):\n    return a + b\n\n\u30df\u30cb\u8a00\u8a9e\u4ed5\u69d8:\nadd: f(a, b) = a + b\n```\n\u30bf\u30b9\u30af:\nPython\u30b3\u30fc\u30c9:\n```python\ndef get_magic_number():\n    return 42\n\n\u30df\u30cb\u8a00\u8a9e\u4ed5\u69d8:\nget_magic_number: return 42\n```",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

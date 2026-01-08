@@ -1,0 +1,39 @@
+You are an expert Python programmer. Your task is to generate a Python function from an S-expression specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the S-expression:** First, think step-by-step about the provided S-expression.
+    -   Identify the function name and parameters from the `(define ...)` clause.
+    -   Analyze the conditional logic (`(cond ...)` and its clauses `((<condition>) <expression>)`).
+    -   Identify the conditions (`(= (mod n 15) 0)`) and return expressions (`"FizzBuzz"`, `n`).
+
+2.  **Apply Translation Rules (S-expression to Python):**
+    -   `(define (<name> <params>) ...)` becomes `def <name>(<params>):`.
+    -   `(cond ...)` translates to a series of `if`/`elif`/`else` statements.
+    -   `((<condition>) <expression>)` translates to `if <condition_python_syntax>:` or `elif <condition_python_syntax>:` followed by `return <expression_python_syntax>`.
+    -   `(else <expression>)` translates to `else: return <expression_python_syntax>`.
+    -   `(= (mod n 15) 0)` becomes `n % 15 == 0`.
+    -   String literals remain as they are.
+
+3.  **Generate Code:** Based on your analysis, generate ONLY the Python code.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Python code.
+    -   Do NOT include the markdown block ('''python).
+    -   Do NOT include any explanation, comments, or any text other than the code itself.
+
+### TASK ###
+
+S-expression Specification:
+{specification}
+
+Chain of Thought:
+1.  The S-expression defines a function `fizzbuzz` with parameter `n`.
+2.  It uses `cond` for conditional logic, which maps to Python `if`/`elif`/`else`.
+3.  The conditions like `(= (mod n 15) 0)` translate to `n % 15 == 0`.
+4.  The return values are "FizzBuzz", "Fizz", "Buzz", or `n`.
+5.  Based on these rules, I will construct the Python function.
+
+Python Code:

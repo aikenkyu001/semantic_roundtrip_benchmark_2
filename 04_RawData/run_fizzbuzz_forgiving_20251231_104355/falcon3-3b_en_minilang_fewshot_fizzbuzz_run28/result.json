@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "FUNCTION fizzbuzz(n):\n  IF n MOD 15 IS 0 THEN\n    RETURN \"FizzBuzz\"\n  ELSEIF n MOD 3 IS 0 THEN\n    RETURN \"Fizz\"\n  ELSEIF n MOD 5 IS 0 THEN\n    RETURN \"Buzz\"\n  ELSE\n    RETURN n",
+            "step1_generated_spec": "FUNCTION fizzbuzz(n):\n  IF n MOD 15 IS 0 THEN\n    RETURN \"FizzBuzz\"\n  ELSEIF n MOD 3 IS 0 THEN\n    RETURN \"Fizz\"\n  ELSEIF n MOD 5 IS 0 THEN\n    RETURN \"Buzz\"\n  ELSE\n    RETURN n",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

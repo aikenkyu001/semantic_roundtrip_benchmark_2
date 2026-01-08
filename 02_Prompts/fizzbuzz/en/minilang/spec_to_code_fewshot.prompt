@@ -1,0 +1,39 @@
+Generate a Python function based on the following Minilang specification.
+Output only the Python code block, with no explanation.
+
+Example 1:
+Minilang Specification:
+FUNCTION get_magic_number: RETURNS 42
+
+Python Code:
+def get_magic_number():
+    return 42
+
+Example 2:
+Minilang Specification:
+FUNCTION fizzbuzz(n):
+  CHECK n MOD 15 IS 0:
+    RETURN "FizzBuzz"
+  ELSE CHECK n MOD 3 IS 0:
+    RETURN "Fizz"
+  ELSE CHECK n MOD 5 IS 0:
+    RETURN "Buzz"
+  ELSE:
+    RETURN n
+
+Python Code:
+def fizzbuzz(n):
+    if n % 15 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return n
+
+Task:
+Minilang Specification:
+{specification}
+
+Python Code:

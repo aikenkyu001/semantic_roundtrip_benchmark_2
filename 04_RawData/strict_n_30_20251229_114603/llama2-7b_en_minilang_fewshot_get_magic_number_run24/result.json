@@ -1,0 +1,15 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "get_magic_number: f() = 42",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\nreturn 42",
+            "step2_generated_code_clean": "def get_magic_number():\nreturn 42",
+            "step2_status": "FAIL: Code execution failed or returned incorrect value. Error: File \"/var/folders/kk/_vllh4kd345g6rq2q6yd_c5h0000gn/T/tmpdrdmjw7b.py\", line 2\n    return 42\n    ^\nIndentationError: expected an indented block after function definition on line 1, Output: None"
+        }
+    ]
+}

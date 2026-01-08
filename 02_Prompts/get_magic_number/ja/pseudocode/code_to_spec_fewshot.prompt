@@ -1,0 +1,17 @@
+以下のPythonコードを疑似コード仕様に変換してください。
+疑似コード仕様のみを出力し、説明は不要です。
+
+例1:
+Pythonコード:
+def get_sum(a, b):
+    return a + b
+
+疑似コード仕様:
+関数 get_sum(a, b):
+    戻り値 a + b
+
+タスク:
+Pythonコード:
+{source_code}
+
+疑似コード仕様:

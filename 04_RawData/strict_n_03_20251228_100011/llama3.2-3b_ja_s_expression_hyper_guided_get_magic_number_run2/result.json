@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u95a2\u6570\u540d\u306f `(name get_magic_number)` \u3067\u3059\u3002\n\u30d1\u30e9\u30e1\u30fc\u30bf\u306f `(parameters)` \u3067\u3059\u3002\n\u623b\u308a\u5024\u306f `(returns (value 42))` \u3067\u3059\u3002\n\n\u3057\u305f\u304c\u3063\u3066\u3001S\u5f0f\u306f `(function (name get_magic_number) (parameters) (returns (value 42)))` \u306b\u306a\u308a\u307e\u3059\u3002",
+            "step1_generated_spec": "\u95a2\u6570\u540d\u306f `(name get_magic_number)` \u3067\u3059\u3002\n\u30d1\u30e9\u30e1\u30fc\u30bf\u306f `(parameters)` \u3067\u3059\u3002\n\u623b\u308a\u5024\u306f `(returns (value 42))` \u3067\u3059\u3002\n\n\u3057\u305f\u304c\u3063\u3066\u3001S\u5f0f\u306f `(function (name get_magic_number) (parameters) (returns (value 42)))` \u306b\u306a\u308a\u307e\u3059\u3002",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

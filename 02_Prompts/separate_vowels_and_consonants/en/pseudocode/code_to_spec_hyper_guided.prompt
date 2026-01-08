@@ -1,0 +1,42 @@
+You are an expert system designer. Your task is to translate a Python function into a pseudocode specification.
+
+To achieve this task, follow these instructions precisely.
+
+### Instructions ###
+
+1.  **Analyze the Python Code:** First, consider the provided Python code step-by-step.
+    -   Identify the function name and its arguments.
+    -   Analyze the main loop structure.
+    -   Identify the process of separating characters based on vowel status.
+    -   Identify the final concatenation step.
+
+2.  **Apply Translation Rules:** Convert Python syntax to pseudocode.
+    -   `for char in input_string:` becomes `for each character in input_string:`
+    -   `if char in vowels:` becomes `if character is in vowels:`
+    -   `.append()` becomes `add character to ...`
+    -   `"".join(...)` becomes `concatenated string of ...`
+
+3.  **Generate the Specification:** Based on your analysis, generate only the pseudocode.
+
+4.  **Strict Output Format:**
+    -   **ALWAYS** output only the pseudocode text.
+    -   Do not include explanations, comments, or any other text outside the specification.
+
+### Task ###
+
+Python Code:
+'''python
+{source_code}
+'''
+
+Thinking Process:
+1.  The function is `separate_vowels_and_consonants` and takes `input_string` as an argument.
+2.  Initialize `vowel_chars` and `consonant_chars` as empty lists.
+3.  Define the `vowels` string.
+4.  Loop through each character in `input_string`.
+5.  Inside the loop, check if the character is a vowel.
+6.  Append to the respective list.
+7.  Concatenate and return the results.
+8.  Translate these steps into pseudocode.
+
+Pseudocode Specification:

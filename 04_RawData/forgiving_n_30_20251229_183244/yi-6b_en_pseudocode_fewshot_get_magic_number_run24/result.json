@@ -1,0 +1,15 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "FUNCTION get_magic_number():\n  RETURN 42",
+            "step1_generated_spec": "FUNCTION get_magic_number():\n  RETURN 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42\n</code>",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42\n</code>",
+            "step2_status": "FAIL: Code execution failed or returned incorrect value. Error: File \"/var/folders/kk/_vllh4kd345g6rq2q6yd_c5h0000gn/T/tmpp2jahapq.py\", line 3\n    </code>\n    ^\nSyntaxError: invalid syntax, Output: None"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+Generate a Python function based on the following minilang specification.
+Output only the Python code block, with no explanation.
+
+Example 1:
+Minilang Specification:
+add: f(a, b) = a + b
+
+Python Code:
+def add(a, b):
+    return a + b
+
+Task:
+Minilang Specification:
+{specification}
+
+Python Code:

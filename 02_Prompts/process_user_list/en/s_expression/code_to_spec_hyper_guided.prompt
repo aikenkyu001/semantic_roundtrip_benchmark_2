@@ -1,0 +1,41 @@
+You are an expert system designer. Your task is to translate a Python function into an S-expression specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name and parameters.
+    -   Recognize the `map` or `list comprehension` pattern over the input list.
+    -   Inside the loop/lambda, identify data access, calculations, conditional logic (e.g., `if/else` for average, `if/elif/else` for rank), and string formatting.
+
+2.  **Apply Translation Rules (Python to S-expression):**
+    -   A loop processing a list to create a new list becomes `(map (lambda (var) ...) list)`.
+    -   Variable assignments inside a scope become `(let* ((var1 val1) (var2 val2) ...) ...)`.
+    -   Dictionary access `.get(key, default)` becomes `(get-or-default dict 'key default)`.
+    -   Conditional expressions become `(if condition true-expr false-expr)` or `(cond (c1 e1) (c2 e2) ...))`.
+    -   Arithmetic operations like `/` become `(/ ...)`
+    -   String formatting becomes `(format "..." ...)`
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the S-expression.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw S-expression text.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+'''python
+{source_code}
+'''
+
+Chain of Thought:
+1.  The function `process_user_list` iterates through a list of dictionaries (`user_data`) and produces a new list of strings. This is a `map` operation.
+2.  For each `user` dictionary, it defines several local variables (`scores`, `name`, `avg_score`, `rank`). This translates to a `let*` block.
+3.  The `avg_score` calculation is conditional, mapping to an `if` expression.
+4.  The `rank` calculation uses a multi-branch conditional, which maps to a `cond` expression.
+5.  The final string is created using `format`.
+6.  I will combine these into a nested S-expression structure.
+
+S-expression Specification:

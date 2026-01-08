@@ -1,0 +1,22 @@
+関数 process_user_list(user_data):
+  空のリスト output_list を作成
+  user_data の各ユーザー user についてループする:
+    user から scores を取得、なければ空のリストをデフォルトとする
+    user から name を取得、なければ "Unknown" をデフォルトとする
+    
+    avg_score を 0.0 に設定
+    もし scores が空でなければ:
+      avg_score を (scores の合計 / scores の数) として計算
+    
+    rank を "N/A" に設定
+    もし avg_score が 90 以上ならば:
+      rank を "Excellent" に設定
+    もしそうでなく、avg_score が 70 以上ならば:
+      rank を "Good" に設定
+    もしそうでなく、avg_score が 0 より大きいならば:
+      rank を "Fair" に設定
+      
+    output_str を "<name>: Average <avg_scoreを小数点以下1桁まで> (Rank: <rank>)" の形式で整形
+    output_str を output_list に追加
+    
+  output_list を返す

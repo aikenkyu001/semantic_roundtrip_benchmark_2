@@ -1,0 +1,40 @@
+Generate a Python function based on the following pseudocode specification.
+Output only the Python code block, with no explanation.
+
+Example 1:
+Pseudocode Specification:
+FUNCTION get_magic_number():
+  RETURN 42
+
+Python Code:
+def get_magic_number():
+    return 42
+
+Example 2:
+Pseudocode Specification:
+FUNCTION fizzbuzz(n):
+  IF n MOD 15 IS 0 THEN
+    RETURN "FizzBuzz"
+  ELSE IF n MOD 3 IS 0 THEN
+    RETURN "Fizz"
+  ELSE IF n MOD 5 IS 0 THEN
+    RETURN "Buzz"
+  ELSE
+    RETURN n
+
+Python Code:
+def fizzbuzz(n):
+    if n % 15 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return n
+
+Task:
+Pseudocode Specification:
+{specification}
+
+Python Code:

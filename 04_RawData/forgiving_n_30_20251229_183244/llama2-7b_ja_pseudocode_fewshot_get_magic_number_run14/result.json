@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "sure, here is the pseudocode for the given Python code:\n\nExample 1:\n```\n\u95a2\u6570 get_sum(a, b):\n    \u623b\u308a\u5024 a + b\n```\nExample 2:\n```\n\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42\n```",
+            "step1_generated_spec": "\u95a2\u6570 get_sum(a, b):\n    \u623b\u308a\u5024 a + b",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

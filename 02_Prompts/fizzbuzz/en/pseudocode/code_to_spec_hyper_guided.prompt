@@ -1,0 +1,50 @@
+You are an expert system designer. Your task is to translate a Python function into a pseudocode specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name from the `def` statement.
+    -   Identify any parameters.
+    -   Analyze the conditional logic (if/elif/else) and their conditions (e.g., modulo operations).
+    -   Identify the return values for each branch.
+
+2.  **Apply Translation Rules:** Convert the Python code to pseudocode based on these rules.
+    -   The Python function name becomes `FUNCTION <name>(<parameters>):`.
+    -   `if`/`elif`/`else` statements become `IF`/`ELSE IF`/`ELSE`.
+    -   Modulo operator `%` becomes `MOD`.
+    -   Equality `==` becomes `IS`.
+    -   String literals remain as they are.
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the pseudocode.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw pseudocode text.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+'''python
+{source_code}
+'''
+
+Chain of Thought:
+1.  The Python function name is `fizzbuzz` and it takes one parameter `n`.
+2.  The first condition checks if `n` modulo 15 is 0. If true, it returns "FizzBuzz".
+3.  The second condition checks if `n` modulo 3 is 0. If true, it returns "Fizz".
+4.  The third condition checks if `n` modulo 5 is 0. If true, it returns "Buzz".
+5.  If none of the above conditions are met, it returns `n`.
+6.  Based on the rules, I will translate this logic into the pseudocode format:
+    FUNCTION fizzbuzz(n):
+      IF n MOD 15 IS 0 THEN
+        RETURN "FizzBuzz"
+      ELSE IF n MOD 3 IS 0 THEN
+        RETURN "Fizz"
+      ELSE IF n MOD 5 IS 0 THEN
+        RETURN "Buzz"
+      ELSE
+        RETURN n
+
+Pseudocode Specification:

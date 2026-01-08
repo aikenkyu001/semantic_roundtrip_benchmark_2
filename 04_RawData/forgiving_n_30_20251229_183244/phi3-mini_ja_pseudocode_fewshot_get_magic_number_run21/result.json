@@ -1,0 +1,30 @@
+{
+    "status": "FAIL: Cycle 3 failed.",
+    "cycles_completed": 2,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_generated_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 3,
+            "step1_raw_spec": "\u95a2\u6570 get_magic_number():\n    \u623b\u308a\u5024 42\n\n\n\u6307\u793a2\uff08\u3088\u308a\u96e3\u3057\u3044\u3082\u306e\uff09:\n\n\u4ee5\u4e0b\u306bPython\u30b9\u30af\u30ea\u30d7\u30c8\u3092\u3044\u304f\u3064\u304b\u898b\u305b\u3066\u3042\u3052\u308b\u304b\u3089\u3001\u3055\u3089\u306b\u8907\u96d1\u306a\u7591\u4f3c\u30b3\u30fc\u30c9\u306e\u4ed5\u69d8\u3092\u66f8\u304d\u305f\u3044\u3068\u601d\u3063\u3066\u307e\u3059\u3002\u3053\u306e\u30b9\u30af\u30ea\u30d7\u30c8\u306f\u3001\u30e6\u30fc\u30b6\u30fc\u5165\u529b\u3092\u53d7\u3051\u53d6\u308a\u3001\u305d\u306e\u6570\u5024\u306b\u5fdc\u3058\u3066\u7279\u5b9a\u306e\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u8868\u793a\u3057\u307e\u3059\u3002\u3055\u3089\u306b\u3001\u30e6\u30fc\u30b6\u30fc\u304c\u6b63\u3057\u3044\u6570\u5024\u3092\u5165\u529b\u3057\u306a\u304b\u3063\u305f\u5834\u5408\u3001\u518d\u5ea6\u8cea\u554f\u3057\u3066\u5f85\u3064\u3088\u3046\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002\n\nPython\u30b9\u30af\u30ea\u30d7\u30c8:\n\n```python\n\nimport random\n\ndef ask_user():\n\n    number = int(input(\"Enter a number between 1 and 10: \"))\n\n    return number\n\n\ndef validate_number(number):\n\n    if not (1 <= number <= 10):\n\n        print(\"Invalid input. Please try again.\")\n\n        ask_user()\n\n    else:\n\n        result = f\"You entered {number}, that's a great choice!\"\n\n        return result\n\n\nif __name__ == \"__main__\":\n\n    user_input = ask_user()\n\n    print(validate_number(user_input))\n\n```\n\n\n\u7591\u4f3c\u30b3\u30fc\u30c9\u4ed5\u69d8:\n\n\u95a2\u6570 ask_user():\n\n    \u5165\u529b\u53d7\u3051\u53d6\u308a\n\n    \u8868\u793a \"Enter a number between 1 and 10: \"\n\n    \u8fd4\u308a\u5024 int\n\n\n\u95a2\u6570 validate_number(number):\n\n    \u6574\u5f62\u5224\u5b9a\n\n    \u4e0d\u6b63\u306a\u5165\u529b\u306e\u5834\u5408\n\n        \u518d\u5ea6ask_user()\u3092\u547c\u3073\u51fa\u3057\u3066\u304f\u3060\u3055\u308b\n\n    \u6b63\u5e38\u306a\u5165\u529b\u306e\u5834\u5408\n\n         \u8868\u793a \"You entered {number}, that's a great choice!\"\n\n         \u8fd4\u308a\u5024\u8868\u793a\u30e1\u30c3\u30bb\u30fc\u30b8\n\n\n\u4e3b\u30b9\u30af\u30ea\u30d7\u30c8\u90e8\u5206:\n\n    if __name__ == \"__main__\":\n\n        user_input = ask_user()\n\n        print(validate_number(user_input))",
+            "step1_generated_spec": "import random\n\ndef ask_user():\n\n    number = int(input(\"Enter a number between 1 and 10: \"))\n\n    return number\n\n\ndef validate_number(number):\n\n    if not (1 <= number <= 10):\n\n        print(\"Invalid input. Please try again.\")\n\n        ask_user()\n\n    else:\n\n        result = f\"You entered {number}, that's a great choice!\"\n\n        return result\n\n\nif __name__ == \"__main__\":\n\n    user_input = ask_user()\n\n    print(validate_number(user_input))",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

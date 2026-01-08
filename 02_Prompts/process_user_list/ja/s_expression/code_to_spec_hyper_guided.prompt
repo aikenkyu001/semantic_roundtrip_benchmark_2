@@ -1,0 +1,41 @@
+あなたは熟練したシステム設計者です。あなたのタスクは、Python関数をS式仕様に翻訳することです。
+
+このタスクを達成するために、以下の指示に正確に従ってください。
+
+### 指示 ###
+
+1.  **Pythonコードの分析:** まず、提供されたPythonコードについて段階的に考えてください。
+    -   関数名と引数を特定します。
+    -   入力リストに対する `map` やリスト内包表記のパターンを認識します。
+    -   ループ/ラムダ内で、データアクセス、計算、条件ロジック（平均値計算の`if/else`、ランク付けの`if/elif/else`など）、文字列フォーマットを特定します。
+
+2.  **翻訳規則の適用 (PythonからS式へ):**
+    -   リストを処理して新しいリストを作成するループは `(map (lambda (var) ...) list)` になります。
+    -   スコープ内の変数割り当ては `(let* ((var1 val1) (var2 val2) ...) ...)` になります。
+    -   辞書アクセス `.get(key, default)` は `(get-or-default dict 'key default)` になります。
+    -   条件式は `(if condition true-expr false-expr)` または `(cond (c1 e1) (c2 e2) ...))` になります。
+    -   `/` のような算術演算は `(/ ...)` になります。
+    -   文字列フォーマットは `(format "..." ...)` になります。
+
+3.  **仕様書の生成:** 分析に基づいて、S式のみを生成してください。
+
+4.  **厳格な出力形式:**
+    -   S式のテキストのみを**必ず**出力してください。
+    -   説明、コメント、その他仕様書以外のテキストを含めないでください。
+
+### タスク ###
+
+Pythonコード:
+'''python
+{source_code}
+'''
+
+Chain of Thought:
+1.  The function `process_user_list` iterates through a list of dictionaries (`user_data`) and produces a new list of strings. This is a `map` operation.
+2.  For each `user` dictionary, it defines several local variables (`scores`, `name`, `avg_score`, `rank`). This translates to a `let*` block.
+3.  The `avg_score` calculation is conditional, mapping to an `if` expression.
+4.  The `rank` calculation uses a multi-branch conditional, which maps to a `cond` expression.
+5.  The final string is created using `format`.
+6.  I will combine these into a nested S-expression structure.
+
+S式仕様:

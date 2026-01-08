@@ -1,0 +1,21 @@
+{
+    "status": "FAIL: Cycle 2 failed.",
+    "cycles_completed": 1,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "(function (name get_magic_number) (parameters) (returns (value 42)))",
+            "step1_generated_spec": "(function (name get_magic_number) (parameters) (returns (value 42)))",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```\n\n```python\nimport inspect\n\ndef get_function_name(func):\n    return func.__name__\n\nclass SFunction:\n    def __init__(self, name, parameters=None, returns=None):\n        self.name = name\n        if parameters is None:\n            parameters = []\n        elif not isinstance(parameters, list):\n            raise ValueError(\"Parameters should be a list\")\n        \n        for param in parameters:\n            if not inspect.iscallable(param):\n                raise ValueError(\"All parameters must be callable\")\n\n        if returns is None:\n            self.returns = []\n        else:\n            self.returns = [returns]\n\n    def __str__(self):\n        params_str = ', '.join([f'(param {i})' for i in range(len(self.parameters))])\n        return f\"({self.name} (name get_{self.name.lower()})) ({parameters_str})\"\n\nclass SFunctionWithParameters(SFunction):\n    def __init__(self, name, parameters=None, returns=None, func=None):\n        super().__init__(name, parameters or [], returns or [])\n        if func is not None:\n            self.parameters = [func]\n\ndef get_magic_number():\n    return 42\n\nprint(get_magic_number())\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "\uff08function(name get_magic_number)\uff09",
+            "step1_generated_spec": "\uff08function(name get_magic_number)\uff09",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

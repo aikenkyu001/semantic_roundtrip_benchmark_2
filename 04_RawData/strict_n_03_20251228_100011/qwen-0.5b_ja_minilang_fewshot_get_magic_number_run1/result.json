@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u30bf\u30b9\u30af: \nPython\u30b3\u30fc\u30c9: \ndef create_table():\n    print(\"Creating table...\")\n    sql = \"\"\"\n        CREATE TABLE IF NOT EXISTS students (\n            id INT PRIMARY KEY,\n            name VARCHAR(10) NOT NULL,\n            age INT\n        );\n    \"\"\"\n    query = sql.split(',')\n    rows = []\n    for row in query:\n        if row not in rows:\n            rows.append(row)\n    print(\"Rows:\", rows)\n    return \"Table created successfully.\"\n\ncreate_table()",
+            "step1_generated_spec": "\u30bf\u30b9\u30af: \nPython\u30b3\u30fc\u30c9: \ndef create_table():\n    print(\"Creating table...\")\n    sql = \"\"\"\n        CREATE TABLE IF NOT EXISTS students (\n            id INT PRIMARY KEY,\n            name VARCHAR(10) NOT NULL,\n            age INT\n        );\n    \"\"\"\n    query = sql.split(',')\n    rows = []\n    for row in query:\n        if row not in rows:\n            rows.append(row)\n    print(\"Rows:\", rows)\n    return \"Table created successfully.\"\n\ncreate_table()",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

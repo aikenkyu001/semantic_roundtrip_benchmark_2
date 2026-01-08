@@ -1,0 +1,16 @@
+以下のPythonコードをミニ言語仕様に変換してください。
+ミニ言語仕様のみを出力し、説明は不要です。
+
+例1:
+Pythonコード:
+def add(a, b):
+    return a + b
+
+ミニ言語仕様:
+add: f(a, b) = a + b
+
+タスク:
+Pythonコード:
+{source_code}
+
+ミニ言語仕様:

@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```python\ndef get_magic_number(): return 42\n\n# \u8aac\u660e\u6587\u5b57\ndocstring = \"This function returns the famous number 42.\"\n\n# \u8fdb\u884c\u51fd\u6570\u7684\u8c03\u7528\nresult = get_magic_number()\n```\n\n\u3053\u306e\u7591\u4f3c\u30b3\u30fc\u30c9\u4ed5\u69d8\u306f\u3001Python\u95a2\u6570\u306e\u540d\u79f0\u3001\u623b\u308a\u5024\u306e\u5f62\u5f0f\u306a\u3069\u306e\u60c5\u5831\u3092\u542b\u307f\u307e\u3059\u3002",
+            "step1_generated_spec": "def get_magic_number(): return 42\n\n# \u8aac\u660e\u6587\u5b57\ndocstring = \"This function returns the famous number 42.\"\n\n# \u8fdb\u884c\u51fd\u6570\u7684\u8c03\u7528\nresult = get_magic_number()",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

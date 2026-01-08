@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "Task:\nPython code:\n```python\ndef get_magic_number():\n    return 42\n```\n\nPseudocode specification:\n1. Input: The Python code is entered as a string, with no spaces or punctuation marks except for the curly braces (which represent the function definition).\n2. Output: The output pseudocode specifies that the function definition returns a single value named \"magic_number\". \n3. Task: The output pseudocode can be used to write a Python function called \"get_magic_number()\" which takes no arguments and returns the magic number (i.e., 42).",
+            "step1_generated_spec": "def get_magic_number():\n    return 42",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

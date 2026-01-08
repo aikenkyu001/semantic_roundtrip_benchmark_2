@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "((defun fizzbuzz (n)\n  (cond ((= (mod n 15) 0) \"FizzBuzz\")\n        ((= (mod n 3) 0) \"Fizz\")\n        ((= (mod n 5) 0) \"Buzz\")\n        (else n))))",
+            "step1_generated_spec": "((defun fizzbuzz (n)\n  (cond ((= (mod n 15) 0) \"FizzBuzz\")\n        ((= (mod n 3) 0) \"Fizz\")\n        ((= (mod n 5) 0) \"Buzz\")\n        (else n))))",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

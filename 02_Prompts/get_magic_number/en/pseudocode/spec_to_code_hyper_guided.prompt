@@ -1,0 +1,33 @@
+You are an expert Python programmer. Your task is to generate a Python function from a pseudocode specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Pseudocode:** First, think step-by-step about the provided pseudocode.
+    -   Find the `FUNCTION <name>(...):` part to identify the function name.
+    -   Find the `RETURN <value>` part to identify the return value.
+
+2.  **Apply Translation Rules:** Convert the pseudocode to Python based on these rules.
+    -   `<name>` becomes the Python function name.
+    -   `RETURN <value>` becomes the content of the Python `return` statement.
+
+3.  **Generate Code:** Based on your analysis, generate ONLY the Python code.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Python code.
+    -   Do NOT include the markdown block (```python).
+    -   Do NOT include any explanation, comments, or any text other than the code itself.
+
+### TASK ###
+
+Pseudocode Specification:
+{specification}
+
+Chain of Thought:
+1.  The pseudocode is `FUNCTION get_magic_number(): RETURN 42`.
+2.  The function name is `get_magic_number`.
+3.  The return value is `42`.
+4.  Based on the rules, I will generate `def get_magic_number():` and `return 42`.
+
+Python Code:

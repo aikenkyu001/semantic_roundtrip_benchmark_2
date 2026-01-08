@@ -1,0 +1,29 @@
+You are an expert Python developer. Your task is to translate a pseudocode specification into a Python function.
+
+### Instructions ###
+1.  **Analyze the Specification:** Read the pseudocode step-by-step and fully understand the logic.
+2.  **Implement in Python:**
+    -   Generate Python code that is 100% faithful to the specification.
+    -   Use Pythonic conventions.
+3.  **Strict Output Format:**
+    -   **ALWAYS** output only the Python code block.
+    -   Do not include explanations, comments, or any other text outside the code block.
+
+### Task ###
+
+Pseudocode Specification:
+'''
+{specification}
+'''
+
+Thinking Process:
+1.  Define the function `separate_vowels_and_consonants(input_string)`.
+2.  Initialize `vowel_chars` and `consonant_chars` as empty lists.
+3.  Define the string of `vowels`.
+4.  Loop through each `char` in `input_string`.
+5.  Check if `char` is in `vowels` (case-insensitive).
+6.  Append `char` to the appropriate list.
+7.  Join and return the `vowel_chars` and `consonant_chars`.
+
+Python Code:
+```

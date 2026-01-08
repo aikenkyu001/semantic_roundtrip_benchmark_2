@@ -1,0 +1,48 @@
+{
+    "status": "FAIL: Cycle 5 failed.",
+    "cycles_completed": 4,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "get_magic_number: f() = 42",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "get_magic_number: f() = 42",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "def get_magic_number():\n    return 42",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 3,
+            "step1_raw_spec": "get_magic_number: f() = 42",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```\n\n\u3053\u306ePython\u30b3\u30fc\u30c9\u306f\u3001\u6307\u5b9a\u3055\u308c\u305f\u30df\u30cb\u8a00\u8a9e\u4ed5\u69d8\u3092\u6e80\u305f\u3057\u3066\u3044\u307e\u3059\u3002\u95a2\u6570\u540d\u304c\u30b3\u30ed\u30f3 (`:`) \u306e\u524d\u306b\u3042\u308b\u3001`f()` \u304c\u4f7f\u308f\u308c\u308b (\u30d1\u30e9\u30e1\u30fc\u30bf\u306e\u306a\u3044\u5834\u5408)\u3001\u7b49\u53f7\u306e\u5f8c\u306b\u623b\u308a\u5024\u304c\u3042\u308b\u3068\u3044\u3046\u7279\u5fb4\u3092\u3059\u3079\u3066\u6301\u3063\u3066\u3044\u307e\u3059\u3002",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 4,
+            "step1_raw_spec": "get_magic_number: f() = 42",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 5,
+            "step1_raw_spec": ".get_magic_number: f() = 42",
+            "step1_generated_spec": ".get_magic_number: f() = 42",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "\u30bf\u30b9\u30af: Python\u30b3\u30fc\u30c9: \n```\ndef get_random_number(n=10, random_state=42):  \n    number = random.randint(0, n-1))\n    return number  \n\n# \u8a2d\u5b9a\u8981\u8fd4\u56de\u7684\u968f\u673a\u6570\nn = 10\nrandom_state = 42\n\n# \u4f7f\u7528get_random_number\u51fd\u6570\u8fd4\u56de\u6307\u5b9a\u957f\u5ea6\u7684\u968f\u673a\u6570\nnumber = get_random_number(n=n+10), random_state=42)\nprint(number)",
+            "step1_generated_spec": "\u30bf\u30b9\u30af: Python\u30b3\u30fc\u30c9: \n```\ndef get_random_number(n=10, random_state=42):  \n    number = random.randint(0, n-1))\n    return number  \n\n# \u8a2d\u5b9a\u8981\u8fd4\u56de\u7684\u968f\u673a\u6570\nn = 10\nrandom_state = 42\n\n# \u4f7f\u7528get_random_number\u51fd\u6570\u8fd4\u56de\u6307\u5b9a\u957f\u5ea6\u7684\u968f\u673a\u6570\nnumber = get_random_number(n=n+10), random_state=42)\nprint(number)",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

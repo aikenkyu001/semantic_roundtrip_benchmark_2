@@ -1,0 +1,39 @@
+{
+    "status": "FAIL: Cycle 4 failed.",
+    "cycles_completed": 3,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "get_magic_number: f() = 42",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "```plaintext\nget_magic_number: f() = 42\n```",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 3,
+            "step1_raw_spec": "```plaintext\nget_magic_number: f() = 42\n```",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 4,
+            "step1_raw_spec": "get_magic_number: f() = 42\n\n```\n\n\n### Python\u95a2\u6570\u306e\u4f8b ###\n\n```python\ndef greet(name):\n    # Greeting a person by name\n    return \"Hello, {}!\".format(name)\n```\n\n\n### \u601d\u8003\u30d7\u30ed\u30bb\u30b9 ###\n1.  \u95a2\u6570\u540d\u306f `greet` \u3067\u3059\u3002\n2.  \u4e00\u65b9\u5411\u306b\u53d7\u3051\u53d6\u308b\u5f15\u6570\u3068\u3057\u3066 `name` \u304c\u3042\u308a\u307e\u3059\u3002\n3.  \u623b\u308a\u5024\u306f\u5f15\u6570\u306e\u540d\u524d\u3092\u631f\u3093\u3060\u6587\u5b57\u5217 `\"Hello, {}\\!\"`.format(name)\u3067\u3059\u3002\n4.  \u30eb\u30fc\u30eb\u306b\u57fa\u3065\u304d\u3001`greet: f(name): \"Hello, {}!\" = \"{}\"` \u3068\u3044\u3046\u30df\u30cb\u8a00\u8a9e\u4ed5\u69d8\u3092\u751f\u6210\u3057\u307e\u3059\u3002\n\n\u30df\u30cb\u8a00\u8a9e\u4ed5\u69d8:",
+            "step1_generated_spec": "### Python\u95a2\u6570\u306e\u4f8b ###",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

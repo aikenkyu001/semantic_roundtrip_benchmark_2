@@ -1,0 +1,15 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```plaintext\nfunction separate_vowels_and_consonants(input_string):\n    vowels = \"aeiouAEIOU\"\n    vowel_chars = []\n    consonant_chars = []\n\n    for each character in input_string:\n        if character is in vowels:\n            add character to vowel_chars\n        else:\n            add character to consonant_chars\n    \n    return concatenate vowel_chars and consonant_chars\n```",
+            "step1_generated_spec": "function separate_vowels_and_consonants(input_string):\n    vowels = \"aeiouAEIOU\"\n    vowel_chars = []\n    consonant_chars = []\n\n    for each character in input_string:\n        if character is in vowels:\n            add character to vowel_chars\n        else:\n            add character to consonant_chars\n    \n    return concatenate vowel_chars and consonant_chars",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "",
+            "step2_generated_code_clean": "",
+            "step2_status": "FAIL: Code validation failed. Error: None, Output: FAILURE\n[\n    {\n        \"input\": \"Hello World\",\n        \"expected\": \"eooHll Wrld\",\n        \"actual\": null,\n        \"passed\": false,\n        \"error\": \"name 'separate_vowels_and_consonants' is not defined\"\n    },\n    {\n        \"input\": \"Python\",\n        \"expected\": \"oPythn\",\n        \"actual\": null,\n        \"passed\": false,\n        \"error\": \"name 'separate_vowels_and_consonants' is not defined\"\n    },\n    {\n        \"input\": \"aeiou\",\n        \"expected\": \"aeiou\",\n        \"actual\": null,\n        \"passed\": false,\n        \"error\": \"name 'separate_vowels_and_consonants' is not defined\"\n    },\n    {\n        \"input\": \"bcdf\",\n        \"expected\": \"bcdf\",\n        \"actual\": null,\n        \"passed\": false,\n        \"error\": \"name 'separate_vowels_and_consonants' is not defined\"\n    },\n    {\n        \"input\": \"AeiOu\",\n        \"expected\": \"AeiOu\",\n        \"actual\": null,\n        \"passed\": false,\n        \"error\": \"name 'separate_vowels_and_consonants' is not defined\"\n    },\n    {\n        \"input\": \"\",\n        \"expected\": \"\",\n        \"actual\": null,\n        \"passed\": false,\n        \"error\": \"name 'separate_vowels_and_consonants' is not defined\"\n    },\n    {\n        \"input\": \"123abc\",\n        \"expected\": \"a123bc\",\n        \"actual\": null,\n        \"passed\": false,\n        \"error\": \"name 'separate_vowels_and_consonants' is not defined\"\n    }\n]"
+        }
+    ]
+}

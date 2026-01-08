@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```text\ndef\nget_42_\n()\nreturn\n42\n)\n()\n```\n\n\u51fa\u529b\u5f62\u5f0f:\n```\ndef get_42_();\nreturn 42;\n)\n()\n```",
+            "step1_generated_spec": "def\nget_42_\n()\nreturn\n42\n)\n()",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

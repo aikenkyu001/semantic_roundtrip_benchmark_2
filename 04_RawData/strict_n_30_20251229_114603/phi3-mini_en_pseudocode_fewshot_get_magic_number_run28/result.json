@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "FUNCTION get_magic_number()\nRETURN 42\nEND FUNCTION\n\n\n# Note that in pseudocode, we typically do not include details such as indentation or explicit data type declarations since it is intended to be language-agnostic. The function name and the return value are usually enough for understanding what the code does.",
+            "step1_generated_spec": "FUNCTION get_magic_number()\nRETURN 42\nEND FUNCTION\n\n\n# Note that in pseudocode, we typically do not include details such as indentation or explicit data type declarations since it is intended to be language-agnostic. The function name and the return value are usually enough for understanding what the code does.",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

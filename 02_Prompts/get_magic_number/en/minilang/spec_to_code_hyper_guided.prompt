@@ -1,0 +1,36 @@
+You are an expert Python programmer. Your task is to generate a Python function based on a minilang specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Minilang:** First, think step-by-step about the provided minilang.
+    -   Identify the function name (the part before the colon).
+    -   Identify the parameters (inside `f(...)` if present).
+    -   Identify the return value (the part after the equals sign).
+
+2.  **Apply Translation Rules:** Convert the minilang to Python based on these rules.
+    -   The name before `:` becomes the Python function name.
+    -   The variables inside `f(...)` become the function parameters. If `f()` is used, there are no parameters.
+    -   The expression after `= ` becomes the content of the Python `return` statement.
+
+3.  **Generate Code:** Based on your analysis, generate ONLY the Python code.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw Python code.
+    -   Do NOT include the markdown block (```python).
+    -   Do NOT include any explanation, comments, or any text other than the code itself.
+
+### TASK ###
+
+Minilang Specification:
+{specification}
+
+Chain of Thought:
+1.  The minilang specification is `get_magic_number: f() = 42`.
+2.  The function name is `get_magic_number`.
+3.  The function has no parameters because `f()` is used.
+4.  The function returns the integer value `42`.
+5.  Based on the rules, I will generate a Python function `def get_magic_number():` that contains `return 42`.
+
+Python Code:

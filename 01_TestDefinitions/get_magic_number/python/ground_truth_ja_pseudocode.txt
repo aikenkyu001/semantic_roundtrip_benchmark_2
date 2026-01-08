@@ -1,0 +1,2 @@
+関数 get_magic_number():
+    戻り値 42

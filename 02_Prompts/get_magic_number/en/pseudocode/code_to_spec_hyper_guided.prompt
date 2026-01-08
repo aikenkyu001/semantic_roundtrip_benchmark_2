@@ -1,0 +1,33 @@
+You are an expert system designer. Your task is to translate a Python function into a pseudocode specification.
+
+Follow these instructions precisely to achieve the task.
+
+### INSTRUCTIONS ###
+
+1.  **Analyze the Python Code:** First, think step-by-step about the provided Python code.
+    -   Identify the function name from the `def` statement.
+    -   Identify the return value from the `return` statement.
+
+2.  **Apply Translation Rules:** Convert the Python code to pseudocode based on these rules.
+    -   The Python function name becomes `FUNCTION <name>():`.
+    -   The Python return value becomes `RETURN <value>`.
+
+3.  **Generate Specification:** Based on your analysis, generate ONLY the pseudocode.
+
+4.  **Strict Output Format:**
+    -   You MUST output ONLY the raw pseudocode text.
+    -   Do NOT include any explanation, comments, or any text other than the specification itself.
+
+### TASK ###
+
+Python Code:
+```python
+{source_code}
+```
+
+Chain of Thought:
+1.  The Python function name is `get_magic_number`.
+2.  The function returns the integer `42`.
+3.  Based on the rules, I will generate `FUNCTION get_magic_number(): RETURN 42`.
+
+Pseudocode Specification:

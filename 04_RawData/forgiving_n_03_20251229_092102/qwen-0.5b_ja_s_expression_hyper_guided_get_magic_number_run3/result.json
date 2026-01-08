@@ -1,0 +1,12 @@
+{
+    "status": "FAIL: Cycle 1 failed.",
+    "cycles_completed": 0,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "S\u5f0f\u306e\u751f\u30c6\u30ad\u30b9\u30c8\u3092\u4e00\u884c\u3067\u51fa\u529b\u3057\u306a\u3051\u308c\u3070\u306a\u308a\u307e\u305b\u3093\u3002",
+            "step1_generated_spec": "S\u5f0f\u306e\u751f\u30c6\u30ad\u30b9\u30c8\u3092\u4e00\u884c\u3067\u51fa\u529b\u3057\u306a\u3051\u308c\u3070\u306a\u308a\u307e\u305b\u3093\u3002",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

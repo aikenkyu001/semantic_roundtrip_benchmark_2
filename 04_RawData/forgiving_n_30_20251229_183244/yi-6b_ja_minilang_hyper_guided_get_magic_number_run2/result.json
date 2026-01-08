@@ -1,0 +1,30 @@
+{
+    "status": "FAIL: Cycle 3 failed.",
+    "cycles_completed": 2,
+    "logs": [
+        {
+            "cycle": 1,
+            "step1_raw_spec": "```plaintext\nget_magic_number: f() = 42\n```\n\u3053\u306e\u30df\u30cb\u8a00\u8a9e\u4ed5\u69d8\u306f\u3001\u63d0\u4f9b\u3055\u308c\u305fPython\u95a2\u6570 `get_magic_number` \u3092\u5b9f\u969b\u306b\u547c\u3073\u51fa\u3059\u5834\u5408\u3067\u3082\u540c\u3058\u7d50\u679c\u3068\u306a\u308a\u307e\u3059\u3002",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 2,
+            "step1_raw_spec": "get_magic_number: f() = 42",
+            "step1_generated_spec": "get_magic_number: f() = 42",
+            "step1_status": "SUCCESS",
+            "step2_generated_code_raw": "```python\ndef get_magic_number():\n    return 42\n```",
+            "step2_generated_code_clean": "def get_magic_number():\n    return 42",
+            "step2_status": "SUCCESS"
+        },
+        {
+            "cycle": 3,
+            "step1_raw_spec": "get_magic_number: f() = 42\n```python\ndef get_magic_number():\n    return 42\n\nprint(get_magic_number())  # Output: 42\n```",
+            "step1_generated_spec": "def get_magic_number():\n    return 42\n\nprint(get_magic_number())  # Output: 42",
+            "step1_status": "FAIL: Generated spec did not match ground truth."
+        }
+    ]
+}

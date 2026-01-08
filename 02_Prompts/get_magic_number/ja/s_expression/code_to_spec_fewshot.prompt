@@ -1,0 +1,16 @@
+以下のPythonコードをS式仕様に変換してください。
+S式仕様のみを出力し、説明は不要です。
+
+例1:
+Pythonコード:
+def get_sum(a, b):
+    return a + b
+
+S式仕様:
+(function (name get_sum) (parameters (param a) (param b)) (returns (value (+ a b))))
+
+タスク:
+Pythonコード:
+{source_code}
+
+S式仕様:

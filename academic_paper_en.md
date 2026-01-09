@@ -63,7 +63,7 @@ The dataset comprises over **7,000 individual trial logs** from experiments cond
     -   The results of the functional validation at each code generation step.
 
 ### 4.2. Access and Utility
-The complete dataset is available in the project repository. Its detailed, transparent logging makes it a valuable resource for a wide range of potential research questions beyond the analysis presented in this paper, including fine-grained error analysis, studies of semantic drift, and explorations of model-specific failure modes. The dataset is archived on Zenodo.
+The complete dataset is available in the project repository. Its detailed, transparent logging makes it a valuable resource for a wide range of potential research questions beyond the analysis presented in this paper, including fine-grained error analysis, studies of semantic drift, and explorations of model-specific failure modes. The dataset is archived on Zenodo (DOI: [10.5281/zenodo.18181174](https://doi.org/10.5281/zenodo.18181174)).
 
 ## 5. Experiments and Results
 

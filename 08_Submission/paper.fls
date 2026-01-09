@@ -1,7 +1,7 @@
-PWD /private/test/semantic_roundtrip_benchmark/08_Submission
+PWD /private/test/semantic_roundtrip_benchmark_2/08_Submission
 INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/web2c/texmf.cnf
 INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /private/test/semantic_roundtrip_benchmark/08_Submission/paper.tex
+INPUT /private/test/semantic_roundtrip_benchmark_2/08_Submission/paper.tex
 OUTPUT paper.log
 INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/base/article.cls
 INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/base/article.cls

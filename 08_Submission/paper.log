@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.11.7)  8 JAN 2026 10:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.11.7)  9 JAN 2026 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/private/test/semantic_roundtrip_benchmark/08_Submission/paper.tex
-(/private/test/semantic_roundtrip_benchmark/08_Submission/paper.tex
+**/private/test/semantic_roundtrip_benchmark_2/08_Submission/paper.tex
+(/private/test/semantic_roundtrip_benchmark_2/08_Submission/paper.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/base/article.cls
@@ -313,12 +313,12 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 [4{/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [5]
-<figure1.pdf, id=167, 702.625pt x 409.53pt>
+<figure1.pdf, id=168, 702.625pt x 409.53pt>
 File: figure1.pdf Graphic file (type pdf)
 <use figure1.pdf>
 Package pdftex.def Info: figure1.pdf  used on input line 107.
 (pdftex.def)             Requested size: 360.0pt x 209.83237pt.
-<figure2.pdf, id=169, 720.6925pt x 1076.02pt>
+<figure2.pdf, id=170, 720.6925pt x 1076.02pt>
 File: figure2.pdf Graphic file (type pdf)
 <use figure2.pdf>
 Package pdftex.def Info: figure2.pdf  used on input line 116.
@@ -361,17 +361,17 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  9725 strings out of 473190
- 152155 string characters out of 5704335
+ 152161 string characters out of 5704335
  555890 words of memory out of 5000000
  32823 multiletter control sequences out of 15000+600000
  566069 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1579b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1581b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on paper.pdf (12 pages, 233160 bytes).
+Output written on paper.pdf (12 pages, 233426 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
+ 315 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
  48 named destinations out of 1000 (max. 500000)
  163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
